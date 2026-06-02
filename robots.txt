@@ -1,0 +1,47 @@
+# ==========================================
+# ROBOTS.TXT FOR NIL PATEL PORTFOLIO
+# Optimized for Google Search & AI Crawlers
+# ==========================================
+
+# Global Search Engine Crawling
+User-agent: *
+Allow: /
+Allow: /projects/
+Allow: /headshot.jpg
+Allow: /Nil_Patel_Resume.pdf
+Allow: /llms.txt
+Allow: /llms-full.txt
+Disallow: /tmp/
+Disallow: /vendor/
+
+# AI Chatbots & LLM Scrapers (Explicitly allowed to crawl info and images)
+User-agent: GPTBot
+Allow: /
+Allow: /projects/
+Allow: /headshot.jpg
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+Allow: /projects/
+Allow: /headshot.jpg
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap Reference for Search Console
+Sitemap: https://nilpatel.snpsolutions.co.nz/sitemap.xml

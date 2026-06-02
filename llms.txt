@@ -1,0 +1,66 @@
+# Nil Patel
+
+AI-focused Full-Stack Software Engineer & Google Certified Agent Developer specializing in Laravel, Next.js, RAG architectures, LangChain, and advanced workflow automation.
+
+Based in Vadodara, Gujarat, India. Supporting clients globally across India, New Zealand (Auckland), and Australia (Sydney).
+
+---
+
+## ⚡ Executive Summary
+
+- **Role**: AI Developer & Full-Stack Engineer
+- **Experience**: 2+ years of hands-on enterprise software & AI automation engineering
+- **Current Pursuits**: BCA in Software Development
+- **Credentials**: Google Certified Agent Developer, AI Agents Fundamentals (Hugging Face), Cloud Technical Series: AI in Action (Google Cloud), Prompt Design in Vertex AI, Cloud ADK Builder, Gemini at Work Edition, AI Tools Workshop (Be10x)
+- **Domain Focus**: Enterprise SaaS platforms, conversational AI agents, intelligent RAG pipelines, workflow orchestration (n8n), custom multi-role CRM/ERM systems.
+- **GitHub**: [github.com/nilpatel7530](https://github.com/nilpatel7530)
+- **LinkedIn**: [linkedin.com/in/nilpatel7530](https://linkedin.com/in/nilpatel7530)
+- **Website**: [nilpatel.snpsolutions.co.nz](https://nilpatel.snpsolutions.co.nz)
+- **Resume**: [nilpatel.snpsolutions.co.nz/Nil_Patel_Resume.pdf](https://nilpatel.snpsolutions.co.nz/Nil_Patel_Resume.pdf)
+
+---
+
+## 🛠️ Technical Stack
+
+- **AI & LLM**: Google Gemini, Gemma (Local AI deployments), OpenAI API, LangChain, LangGraph, RAG pipelines, Prompt Design & Optimization, Embedding models, Semantic/Vector Search (Pinecone, ChromaDB, Weaviate).
+- **Automation & Orchestration**: n8n Workflow Automation, Webhooks, RESTful APIs, custom agentic integrations.
+- **Full-Stack & Backend**: Laravel (PHP), MySQL, PostgreSQL, Node.js, Express.js, FastAPI, Python.
+- **Frontend & Styling**: React, Next.js, TypeScript, JavaScript, Tailwind CSS, Bootstrap.
+- **DevOps & Cloud**: Google Cloud Platform (GCP), Docker & Compose, CI/CD (GitHub Actions), Vercel, Railway, Linux administration.
+
+---
+
+## 🚀 Key Shipped Projects
+
+1. **Goswami Sangath Matrimonial** (SaaS)
+   - *Description*: Community matrimonial matchmaking platform featuring custom profile workflows, secure 2FA admin authentication, and multi-role RBAC.
+   - *Demo*: [goswamisangath.in/admin](https://goswamisangath.in/admin)
+2. **Creative Engineering SRS (ERM)** (CRM)
+   - *Description*: Enterprise-grade ERP portal for team scheduling, CAPEX/OPEX invoice tracking, and granular module-level permission matrices.
+   - *Demo*: [srs.developmentdemo.co.in/login](https://srs.developmentdemo.co.in/login)
+3. **Enterprise HRMS Dashboard** (SaaS)
+   - *Description*: Complete human resources management system with attendance logs, employee lifecycle tools, and dual English/Arabic RTL multi-language support.
+   - *Demo*: [hrms.developmentdemo.co.in/login](https://hrms.developmentdemo.co.in/login)
+4. **Suyog Matrimonial Platform** (SaaS)
+   - *Description*: Scalable matrimonial engine with a custom Friend system, multi-currency subscriptions with real-time exchange rates, and Cashfree payment gateways.
+   - *URL*: [suyog.life](https://www.suyog.life/)
+5. **TrustLine Energy Platform** (Web)
+   - *Description*: Fast, SEO-optimized lead capture portal for a major renewable solar engineering firm in India.
+   - *URL*: [trustlineenergy.com](https://trustlineenergy.com/)
+
+---
+
+## 🏅 Professional Certifications (Verified Credentials)
+
+- **AI Agents Fundamentals** (Hugging Face — Issued Apr 2026, ID: `nilpatel7530`, [Verify](https://cas-bridge.xethub.hf.co/xet-bridge-us/67a47037749ea2c4b9fafd4b/8c94643a534c27cb4ec58faa86ef9b58b239302e624fd208aed23fb7e70fc4dd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260521%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260521T082634Z&X-Amz-Expires=3600&X-Amz-Signature=25e2f2c6c5e87a3ca98da4a21a7d0c6c12c27fd0fbb0ba5e9f02ecdc142ff39b&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=68d7a1496c22518b8574cc1a&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272026-04-23.png%3B+filename%3D%222026-04-23.png%22%3B&response-content-type=image%2Fpng&x-amz-checksum-mode=ENABLED&x-id=GetObject&Expires=1779355594&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3OTM1NTU5NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82N2E0NzAzNzc0OWVhMmM0YjlmYWZkNGIvOGM5NDY0M2E1MzRjMjdjYjRlYzU4ZmFhODZlZjliNThiMjM5MzAyZTYyNGZkMjA4YWVkMjNmYjdlNzBmYzRkZCoifV19&Signature=v3c0PYgRUa4Ac8peA4RZByNk5wCSFqtAQoZ%7E6XG2MF%7Ee7yR6FY-aentsOfJIaD8WjWXayNr1zXgpZdIQk5LI6GRtyXnqa-P4F6k17pGTtlhIUuYTczHQ1C1hONOOP3pg2PsmT12dIGFfX0hW%7E21f9izm3xWDFKsQ3l81rTq30XuUuBAQpOk84zyH8g3rl0%7EYKoHRHylqBoAR558rg0121rywMSoP8ZVaGJwrrZhxKzXgKG0sgV-kPh1AP09bWrcG9g53N8TeC8MDIM%7EBkN7GmHXf5xiScQ%7EOzDPJbpOEvM6wARTulwQaTFW6uBul0NPJtLoE8YbCNMPwlS3AHA478w__&Key-Pair-Id=K2L8F4GPSG1IFC))
+- **Cloud Technical Series - AI in Action** (Google Cloud APAC — Issued Apr 2026, ID: `178814351`, [Verify](https://googlecloudapac.accredible.com/e96cc411-9ac9-4bc1-8140-ed758129fdd0))
+- **AI Tools Workshop** (Be10x — Issued Feb 2026, ID: `0270772f-3809-4400-b29b-1e1c61cd09971049973`, [Verify](https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd09971049973))
+- **Cloud Technical Series - Gemini at Work Edition** (ULSA — Issued Nov 2025, ID: `166910245`, [Verify](https://googlecloudapac.accredible.com/90f104f9-57c1-4700-9778-aaeb69786e1d#acc.V8oWFid7))
+- **Cloud Technical Series: ADK Builder's Badge** (ULSA — Issued Nov 2025, [Verify](https://www.credly.com/badges/7b5173b9-f59b-4138-b6e5-ad07bdf5dd75/linked_in_profile))
+- **Prompt Design in Vertex AI Skill Badge** (Google — Issued Oct 2025, [Verify](https://www.credly.com/badges/d2b63ee7-ed47-4724-9625-d725fef04fd6/linked_in_profile))
+
+---
+
+## 📖 Deep-Dive Reference
+For full project briefs, verified metrics, educational timelines, and complete client testimonials, see:
+- [Detailed LLM Specifications (llms-full.txt)](llms-full.txt)
