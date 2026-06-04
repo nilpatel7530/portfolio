@@ -19,8 +19,8 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        # Adjust server-dir to match where your domain points (e.g. public_html/ or public_html/portfolio/)
-        server-dir: public_html/
+        # Root folder is already mapped to the FTP account home directory
+        server-dir: ./
         exclude: |
           **/.git*
           **/.git*/**
