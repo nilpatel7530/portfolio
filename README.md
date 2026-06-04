@@ -1,73 +1,26 @@
-# React + TypeScript + Vite
+# Nil Patel — AI Developer & Full-Stack Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official portfolio website of **Nil Patel**, a Google Certified Agent Developer and Full-Stack Software Engineer. This is a high-performance, single-page, SEO/AEO/GEO-optimized cinematic portfolio designed for maximum readability, loading speed, and discovery by both human visitors and AI agents/search crawlers.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **SEO/AEO/GEO Optimized**: Integrated structured JSON-LD schemas (Person, ProfilePage, Organization, FAQPage, ImageObject) for rich search snippets and generative answer engine indexing.
+- **Cinematic Dark Theme**: Responsive space-inspired user experience with smooth interactive transitions.
+- **System Intelligence Hub**: Built-in FAQ section using structured "Answer First" markup to optimize voice search and LLM extraction.
+- **Interactive Bento Showcase**: Balanced layout highlighting active web/SaaS projects, enterprise CRM/ERM platforms, and cloud certifications.
 
-## React Compiler
+## 📂 Repository Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `index.html` - Core single-page interface with embedded optimized script and style blocks.
+- `headshot.jpg` - Professional headshot image (indexed via Schema).
+- `Nil_Patel_Resume.pdf` - Professional resume.
+- `robots.txt` - SEO crawler guidance.
+- `sitemap.xml` - XML sitemap for search crawlers.
+- `images/` - Project screenshot assets.
+- `llms.txt` / `llms-full.txt` - LLM-readable summary files for AI agents.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack & Integration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Markup**: Semantic HTML5 & CSS3 Variables.
+- **Fonts**: `Instrument Serif` (Editorial styling) & `Barlow` (Clean system reading) via Google Fonts.
+- **AI Schema**: JSON-LD Person, Organization, and FAQ metadata.
