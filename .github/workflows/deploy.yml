@@ -1,0 +1,30 @@
+name: 🚀 Auto-Deploy to Hosting via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: 🎉 Deploy to Shared Hosting
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 📂 Sync files via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        # Adjust server-dir to match where your domain points (e.g. public_html/ or public_html/portfolio/)
+        server-dir: public_html/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          .vercel/**
+          vercel.json
+          vercel-backup.json
+          README.md
