@@ -47,6 +47,15 @@ Based in Vadodara, Gujarat, India. Supporting clients globally across India, New
 5. **TrustLine Energy Platform** (Web)
    - *Description*: Fast, SEO-optimized lead capture portal for a major renewable solar engineering firm in India.
    - *URL*: [trustlineenergy.com](https://trustlineenergy.com/)
+6. **NilLeads — AI Client Finder** (AI & Automation)
+   - *Description*: 100% local AI lead scraper and prospect evaluator running Gemma 4 E4B MoE in LM Studio over a 128K context window.
+   - *Code*: [github.com/nilpatel7530/leadscraper](https://github.com/nilpatel7530/leadscraper)
+7. **Video Watermark Remover** (Web / Automation)
+   - *Description*: Video automated prep utility implementing FFmpeg delogo, crop, and blur algorithms with real-time stderr progress tracking.
+   - *Code*: [github.com/nilpatel7530/video_watermark_remover_by_Nil_Patel](https://github.com/nilpatel7530/video_watermark_remover_by_Nil_Patel)
+8. **YouTube Automation Agent** (AI & Automation)
+   - *Description*: Autonomous Node.js channel daemon executing trend analysis, AI scripting, DALL-E thumbnailing, and scheduling video uploads via YouTube Data API.
+   - *Code*: [github.com/nilpatel7530/youtube-automation-agent](https://github.com/nilpatel7530/youtube-automation-agent)
 
 ---
 

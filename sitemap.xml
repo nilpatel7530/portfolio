@@ -41,6 +41,24 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://nilpatel.snpsolutions.co.nz/images/nilleads.png</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nilpatel.snpsolutions.co.nz/images/watermarkremover.png</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nilpatel.snpsolutions.co.nz/images/ytautomation.png</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     <!-- LLM Crawler Specifications -->
     <url>
         <loc>https://nilpatel.snpsolutions.co.nz/Nil_Patel_Resume.pdf</loc>

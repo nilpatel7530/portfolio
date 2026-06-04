@@ -99,6 +99,44 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Shipped direct consultation captures that increased incoming digital leads by 45%.
   - Google PageSpeed Performance score of 98/100.
 
+### 6. NilLeads — AI Client Finder
+- **Category**: Local AI Lead Scraper & Prospect Analyzer
+- **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/leadscraper)
+- **Core Stack**: Python (Flask), Gemma 4 E4B MoE (Local model in LM Studio), BeautifulSoup, SQLite.
+- **Key Architectures**:
+  - 128K context window batching strategy concatenating parallel URL crawls into one single prompt call.
+  - Context limit tracker and automatic trim safelights for token boundaries.
+  - Analytical thinking toggle inside completions, configuring low-temperature structured JSON extraction.
+  - Strict regex-based recovery parser handling malformed JSON from truncated local models.
+- **Impact Metrics**:
+  - Achieved offline operational continuity utilizing custom SQLite database fallbacks.
+  - Bypasses directory scraper blocks by fetching from cached indexes.
+
+### 7. Video Watermark Remover
+- **Category**: Automated Video Editing & Preparation Utility
+- **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/video_watermark_remover_by_Nil_Patel)
+- **Core Stack**: Python (Flask), FFmpeg Subprocesses, SQLite, Tkinter, Bcrypt.
+- **Key Architectures**:
+  - FFmpeg filter pipelines integrating smart Crop, Box Blur, and Delogo Erase modes.
+  - Direct stderr progress tracking parsing frame durations from console subprocess outputs.
+  - Native Windows desktop file selector dialog picker using system Tkinter processes.
+  - Secure bcrypt authentication gating persistent SQLite configurations.
+- **Impact Metrics**:
+  - Appends dynamically scaled outro video files matching source frame heights and aspect ratios.
+  - Standalone compiled distribution support via PyInstaller packaging hooks.
+
+### 8. YouTube Automation Agent
+- **Category**: Autonomous Channel Management Agent
+- **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/youtube-automation-agent)
+- **Core Stack**: Node.js, YouTube Data API v3, OpenAI SDK, Gemini SDK, DALL-E 3, Automated Cron Daemon.
+- **Key Architectures**:
+  - Multi-agent collaboration delegating trend analysis, scripting, thumbnailing, and scheduling.
+  - Google AI Studio and OpenAI API key provider routing to optimize tokens.
+  - Automated scheduling queues running Daily (Content Strategic research), Hourly (Publish Queue), and Weekly (Analytics review).
+- **Impact Metrics**:
+  - Automates 100% of creation-to-publishing tasks for short-form or compilation style channels.
+  - Fully local deployment compatibility on VPS or Raspberry Pi.
+
 ---
 
 ## 🏅 Professional Certifications (Verified Credentials)
