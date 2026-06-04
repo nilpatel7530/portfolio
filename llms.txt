@@ -9,7 +9,7 @@ Based in Vadodara, Gujarat, India. Supporting clients globally across India, New
 ## ⚡ Executive Summary
 
 - **Role**: AI Developer & Full-Stack Engineer
-- **Experience**: 2+ years of hands-on enterprise software & AI automation engineering
+- **Experience**: 1+ years of hands-on enterprise software & AI automation engineering
 - **Current Pursuits**: BCA in Software Development
 - **Credentials**: Google Certified Agent Developer, AI Agents Fundamentals (Hugging Face), Cloud Technical Series: AI in Action (Google Cloud), Prompt Design in Vertex AI, Cloud ADK Builder, Gemini at Work Edition, AI Tools Workshop (Be10x)
 - **Domain Focus**: Enterprise SaaS platforms, conversational AI agents, intelligent RAG pipelines, workflow orchestration (n8n), custom multi-role CRM/ERM systems.

@@ -12,7 +12,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
 - **Australia** (Sydney, Melbourne, Brisbane)
 
 ### Core Competitive Advantage
-- **Full-Stack Competency**: Over 2+ years of production experience building and deploying multi-tenant SaaS products and ERP systems using Laravel, React, and Python/FastAPI.
+- **Full-Stack Competency**: Over 1+ years of production experience building and deploying multi-tenant SaaS products and ERP systems using Laravel, React, and Python/FastAPI.
 - **Agentic AI Engineering**: Designing and deploying production-grade AI pipelines including Retrieval-Augmented Generation (RAG), local LLM inference (Gemma), prompt chaining, and intelligent autonomous workflows using n8n and Python.
 
 ### Verified Assets
@@ -28,7 +28,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
 - **Core Focus**: Software Architecture, Database Systems (RDBMS & NoSQL), Data Structures & Algorithms, Web Engineering.
 
 ### Seer IT Solutions — Full-Stack & AI Developer (Internship & Contracting)
-- **Tenure**: 2+ Years
+- **Tenure**: 1+ Years
 - **Role**: Leading integration of generative AI features, designing custom Laravel middleware and RBAC systems, maintaining cloud infrastructure, and executing DB query optimizations.
 - **Accomplishments**: Shipped 10+ production-grade projects across HRMS, CRM, ERM, and AI automation domains.
 
