@@ -1340,8 +1340,12 @@ body.cursor-link #cursor-ring { opacity: 0; }
 .stack-rows { display: flex; flex-direction: column; gap: 0.75rem; }
 .stack-row-wrap { overflow: hidden; }
 .stack-row {
-  display: flex; width: max-content; gap: 0.75rem;
+  display: flex; width: max-content;
   animation: run 22s linear infinite;
+}
+.stack-row-content {
+  display: flex; gap: 0.75rem;
+  padding-right: 0.75rem;
 }
 .stack-row:nth-child(2) { animation-direction: reverse; animation-duration: 18s; }
 .stack-chip {
@@ -2647,59 +2651,66 @@ textarea.form-control { min-height: 140px; }
   <div class="stack-rows">
     <div class="stack-row-wrap">
       <div class="stack-row">
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Laravel</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Next.js</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Python</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>LangChain</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>OpenAI API</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>React</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>TypeScript</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>PostgreSQL</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Redis</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Docker</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>AWS</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Node.js</span>
-        <!-- duplicate for loop -->
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Laravel</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Next.js</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Python</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>LangChain</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>OpenAI API</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>React</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>TypeScript</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>PostgreSQL</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Redis</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Docker</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>AWS</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Node.js</span>
+        <div class="stack-row-content">
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Laravel</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Next.js</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Python</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>LangChain</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>OpenAI API</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>React</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>TypeScript</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>PostgreSQL</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Redis</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Docker</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>AWS</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Node.js</span>
+        </div>
+        <div class="stack-row-content" aria-hidden="true">
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Laravel</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Next.js</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Python</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>LangChain</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>OpenAI API</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>React</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>TypeScript</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>PostgreSQL</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Redis</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Docker</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>AWS</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Node.js</span>
+        </div>
       </div>
     </div>
     <div class="stack-row-wrap">
       <div class="stack-row" style="animation-direction:reverse;animation-duration:18s">
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Google Gemini</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Vector DBs</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>RAG Pipelines</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>GitHub Actions</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>MySQL</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>MongoDB</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>FastAPI</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Pinecone</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Stripe</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>GraphQL</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Tailwind CSS</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>PyTorch</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Google Gemini</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Vector DBs</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>RAG Pipelines</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>GitHub Actions</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>MySQL</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>MongoDB</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>FastAPI</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Pinecone</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Stripe</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>GraphQL</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>Tailwind CSS</span>
-        <span class="stack-chip"><span class="stack-chip-dot"></span>PyTorch</span>
+        <div class="stack-row-content">
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Google Gemini</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Vector DBs</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>RAG Pipelines</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>GitHub Actions</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>MySQL</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>MongoDB</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>FastAPI</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Pinecone</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Stripe</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>GraphQL</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Tailwind CSS</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>PyTorch</span>
+        </div>
+        <div class="stack-row-content" aria-hidden="true">
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Google Gemini</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Vector DBs</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>RAG Pipelines</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>GitHub Actions</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>MySQL</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>MongoDB</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>FastAPI</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Pinecone</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Stripe</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>GraphQL</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>Tailwind CSS</span>
+          <span class="stack-chip"><span class="stack-chip-dot"></span>PyTorch</span>
+        </div>
       </div>
     </div>
   </div>
