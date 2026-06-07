@@ -13,14 +13,15 @@ Official portfolio website of **Nil Patel**, a Google Certified Agent Developer 
 
 ## 📂 Shipped Projects
 
-1. **Goswami Sangath Matrimonial** (SaaS) — Secure community matchmaking platform featuring 2FA admin authentication and customized RBAC.
-2. **Suyog Matrimonial Platform** (SaaS) — Scalable matchmaking service with a friend system, subscription management, and Cashfree payments.
-3. **Creative Engineering SRS (ERM)** (CRM) — Enterprise scheduling and OPEX/CAPEX tracking portal with granular permissions.
-4. **Enterprise HRMS Dashboard** (SaaS) — B2B HR management system with dual English/Arabic RTL multi-language support.
-5. **TrustLine Energy Platform** (Web) — SEO-optimized solar renewable engineering consulting lead capture portal.
-6. **NilLeads — AI Client Finder** (AI & Automation) — Local Gemma 4 E4B MoE client scraper and prospect analyzer (128K context window).
-7. **Video Watermark Remover** (Web / Automation) — Automated video crop, blur, and FFmpeg delogo erase prep tool.
-8. **YouTube Automation Agent** (AI & Automation) — Autonomous 24/7 channel daemon for AI scriptwriting, thumbnailing, and scheduling.
+1. **LeadGen Pro Architect** (AI & Automation) — High-performance lead discovery and enrichment platform utilizing Gemini 3.5 Flash API for fit scoring, email optimization, and data extraction.
+2. **Goswami Sangath Matrimonial** (SaaS) — Secure community matrimonial matchmaking platform featuring 2FA admin authentication and customized RBAC.
+3. **Suyog Matrimonial Platform** (SaaS) — Scalable matchmaking service with a friend system, subscription management, and Cashfree payments.
+4. **Creative Engineering SRS (ERM)** (CRM) — Enterprise scheduling and OPEX/CAPEX tracking portal with granular permissions.
+5. **Enterprise HRMS Dashboard** (SaaS) — B2B HR management system with dual English/Arabic RTL multi-language support.
+6. **TrustLine Energy Platform** (Web) — SEO-optimized solar renewable engineering consulting lead capture portal.
+7. **NilLeads — AI Client Finder** (AI & Automation) — Local Gemma 4 E4B MoE client scraper and prospect analyzer (128K context window).
+8. **Video Watermark Remover** (Web / Automation) — Automated video crop, blur, and FFmpeg delogo erase prep tool.
+9. **YouTube Automation Agent** (AI & Automation) — Autonomous 24/7 channel daemon for AI scriptwriting, thumbnailing, and scheduling.
 
 ## 📂 Repository Structure
 
