@@ -32,28 +32,31 @@ Based in Vadodara, Gujarat, India. Supporting clients globally across India, New
 
 ## 🚀 Key Shipped Projects
 
-1. **Goswami Sangath Matrimonial** (SaaS)
+1. **LeadGen Pro Architect** (AI & Automation)
+   - *Description*: High-performance B2B lead discovery and enrichment platform featuring automated fit scoring, email optimization, and data extraction using Google Gemini API.
+   - *Code*: [github.com/nilpatel7530/leadgen-pro-by-nil](https://github.com/nilpatel7530/leadgen-pro-by-nil)
+2. **Goswami Sangath Matrimonial** (SaaS)
    - *Description*: Community matrimonial matchmaking platform featuring custom profile workflows, secure 2FA admin authentication, and multi-role RBAC.
    - *Demo*: [goswamisangath.in/admin](https://goswamisangath.in/admin)
-2. **Creative Engineering SRS (ERM)** (CRM)
+3. **Creative Engineering SRS (ERM)** (CRM)
    - *Description*: Enterprise-grade ERP portal for team scheduling, CAPEX/OPEX invoice tracking, and granular module-level permission matrices.
    - *Demo*: [srs.developmentdemo.co.in/login](https://srs.developmentdemo.co.in/login)
-3. **Enterprise HRMS Dashboard** (SaaS)
+4. **Enterprise HRMS Dashboard** (SaaS)
    - *Description*: Complete human resources management system with attendance logs, employee lifecycle tools, and dual English/Arabic RTL multi-language support.
    - *Demo*: [hrms.developmentdemo.co.in/login](https://hrms.developmentdemo.co.in/login)
-4. **Suyog Matrimonial Platform** (SaaS)
+5. **Suyog Matrimonial Platform** (SaaS)
    - *Description*: Scalable matrimonial engine with a custom Friend system, multi-currency subscriptions with real-time exchange rates, and Cashfree payment gateways.
    - *URL*: [suyog.life](https://www.suyog.life/)
-5. **TrustLine Energy Platform** (Web)
+6. **TrustLine Energy Platform** (Web)
    - *Description*: Fast, SEO-optimized lead capture portal for a major renewable solar engineering firm in India.
    - *URL*: [trustlineenergy.com](https://trustlineenergy.com/)
-6. **NilLeads — AI Client Finder** (AI & Automation)
+7. **NilLeads — AI Client Finder** (AI & Automation)
    - *Description*: 100% local AI lead scraper and prospect evaluator running Gemma 4 E4B MoE in LM Studio over a 128K context window.
    - *Code*: [github.com/nilpatel7530/leadscraper](https://github.com/nilpatel7530/leadscraper)
-7. **Video Watermark Remover** (Web / Automation)
+8. **Video Watermark Remover** (Web / Automation)
    - *Description*: Video automated prep utility implementing FFmpeg delogo, crop, and blur algorithms with real-time stderr progress tracking.
    - *Code*: [github.com/nilpatel7530/video_watermark_remover_by_Nil_Patel](https://github.com/nilpatel7530/video_watermark_remover_by_Nil_Patel)
-8. **YouTube Automation Agent** (AI & Automation)
+9. **YouTube Automation Agent** (AI & Automation)
    - *Description*: Autonomous Node.js channel daemon executing trend analysis, AI scripting, DALL-E thumbnailing, and scheduling video uploads via YouTube Data API.
    - *Code*: [github.com/nilpatel7530/youtube-automation-agent](https://github.com/nilpatel7530/youtube-automation-agent)
 

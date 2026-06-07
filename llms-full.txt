@@ -36,7 +36,20 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
 
 ## 🚀 Shipped Projects: Technical Specifications & Proven Metrics
 
-### 1. Goswami Sangath Matrimonial
+### 1. LeadGen Pro Architect
+- **Category**: AI-Powered B2B Lead Discovery and Enrichment Platform
+- **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/leadgen-pro-by-nil)
+- **Core Stack**: React, TypeScript, Vite, Google Gen AI SDK (`@google/genai`), CSS, Lucide React.
+- **Key Architectures**:
+  - Direct integration with `@google/genai` using client-side Gemini API configurations for dynamic prompt optimization.
+  - Automated Fit Scoring engine evaluating business relevance using customized evaluation parameters.
+  - Real-time client-side CSV parsing, filtering, and data export systems for lead pipelines.
+  - Modern dark-mode dashboard UI with glassmorphic cards and dynamic transitions.
+- **Impact Metrics**:
+  - Facilitated local testing and execution of B2B lead enrichment pipelines with near-zero latency.
+  - Bypasses external scraper enrichment tools with direct LLM calls, lowering operation costs.
+
+### 2. Goswami Sangath Matrimonial
 - **Category**: Multi-Role Community SaaS Platform
 - **Deployment URL**: [https://goswamisangath.in/admin](https://goswamisangath.in/admin)
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530) *(Private Corporate Source)*
@@ -49,7 +62,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Supported secure profile listings and matchmaking workflows for community members.
   - Maintained zero security breaches through encrypted authentication policies.
 
-### 2. Creative Engineering SRS (ERM)
+### 3. Creative Engineering SRS (ERM)
 - **Category**: Enterprise Resource Management & Reporting Dashboard
 - **Deployment URL**: [https://srs.developmentdemo.co.in/login](https://srs.developmentdemo.co.in/login)
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530)
@@ -62,7 +75,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Unified operational tracking for engineering team workflows.
   - Reduced invoicing and budget discrepancies by 22% through automated CAPEX/OPEX validation logs.
 
-### 3. Enterprise HRMS Dashboard
+### 4. Enterprise HRMS Dashboard
 - **Category**: B2B SaaS Human Resource Management System
 - **Deployment URL**: [https://hrms.developmentdemo.co.in/login](https://hrms.developmentdemo.co.in/login)
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530)
@@ -75,7 +88,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Successfully designed to support multi-national operations in India and the Gulf region.
   - Boosted HR department processing speeds by 30% through automated document and shift generators.
 
-### 4. Suyog Matrimonial Platform
+### 5. Suyog Matrimonial Platform
 - **Category**: Global Matchmaking SaaS Platform
 - **Deployment URL**: [https://www.suyog.life/](https://www.suyog.life/)
 - **Core Stack**: Laravel MVC, PHP, MySQL, Bootstrap, Cashfree SDK, Real-time SMS Gateway.
@@ -87,7 +100,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Integrated Cashfree payment gateway with toggleable Test/Live mode configurations.
   - Scaled user profiles with high page speed index (90+ mobile/desktop).
 
-### 5. TrustLine Energy Platform
+### 6. TrustLine Energy Platform
 - **Category**: High-Performance Lead Capture Portal
 - **Deployment URL**: [https://trustlineenergy.com/](https://trustlineenergy.com/)
 - **Core Stack**: HTML5, CSS3, JavaScript, Bootstrap, Cloudflare Edge, SEO Semantic Elements.
@@ -99,7 +112,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Shipped direct consultation captures that increased incoming digital leads by 45%.
   - Google PageSpeed Performance score of 98/100.
 
-### 6. NilLeads — AI Client Finder
+### 7. NilLeads — AI Client Finder
 - **Category**: Local AI Lead Scraper & Prospect Analyzer
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/leadscraper)
 - **Core Stack**: Python (Flask), Gemma 4 E4B MoE (Local model in LM Studio), BeautifulSoup, SQLite.
@@ -112,7 +125,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Achieved offline operational continuity utilizing custom SQLite database fallbacks.
   - Bypasses directory scraper blocks by fetching from cached indexes.
 
-### 7. Video Watermark Remover
+### 8. Video Watermark Remover
 - **Category**: Automated Video Editing & Preparation Utility
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/video_watermark_remover_by_Nil_Patel)
 - **Core Stack**: Python (Flask), FFmpeg Subprocesses, SQLite, Tkinter, Bcrypt.
@@ -125,7 +138,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
   - Appends dynamically scaled outro video files matching source frame heights and aspect ratios.
   - Standalone compiled distribution support via PyInstaller packaging hooks.
 
-### 8. YouTube Automation Agent
+### 9. YouTube Automation Agent
 - **Category**: Autonomous Channel Management Agent
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/youtube-automation-agent)
 - **Core Stack**: Node.js, YouTube Data API v3, OpenAI SDK, Gemini SDK, DALL-E 3, Automated Cron Daemon.
