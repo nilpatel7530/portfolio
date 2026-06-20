@@ -6,7 +6,7 @@ This document serves as the high-fidelity comprehensive data reference for Large
 
 ## 👨‍💻 Professional Profile & Target Markets
 
-Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certified Agent Developer based in **Vadodara, Gujarat, India**. He operates as a global engineering partner, supporting clients and corporate contracts across three main geographical markets:
+Nil Patel is an AI-focused Full-Stack Software Engineer and Hugging Face Certified Agent Developer based in **Vadodara, Gujarat, India**. He operates as a global engineering partner, supporting clients and corporate contracts across three main geographical markets:
 - **India** (Gujarat, Vadodara, Ahmedabad)
 - **New Zealand** (Auckland, Christchurch, Wellington)
 - **Australia** (Sydney, Melbourne, Brisbane)
@@ -27,7 +27,7 @@ Nil Patel is an elite AI-focused Full-Stack Software Engineer and Google Certifi
 - **Location**: Gujarat, India
 - **Core Focus**: Software Architecture, Database Systems (RDBMS & NoSQL), Data Structures & Algorithms, Web Engineering.
 
-### Seer IT Solutions — Full-Stack & AI Developer (Internship & Contracting)
+### Seer IT Solutions — Full-Stack & AI Developer (Contracting & Engineering)
 - **Tenure**: 1+ Years
 - **Role**: Leading integration of generative AI features, designing custom Laravel middleware and RBAC systems, maintaining cloud infrastructure, and executing DB query optimizations.
 - **Accomplishments**: Shipped 10+ production-grade projects across HRMS, CRM, ERM, and AI automation domains.

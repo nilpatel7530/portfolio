@@ -1,6 +1,6 @@
 # Nil Patel — AI Developer & Full-Stack Engineer
 
-Official portfolio website of **Nil Patel**, a Google Certified Agent Developer and Full-Stack Software Engineer. This is a high-performance, single-page, SEO/AEO/GEO-optimized cinematic portfolio designed for maximum readability, loading speed, and discovery by both human visitors and AI agents/search crawlers.
+Official portfolio website of **Nil Patel**, a Hugging Face Certified Agent Developer and Full-Stack Software Engineer. This is a high-performance, single-page, SEO/AEO/GEO-optimized cinematic portfolio designed for maximum readability, loading speed, and discovery by both human visitors and AI agents/search crawlers.
 
 🌐 **Live Portfolio**: [nilpatel.snpsolutions.co.nz](https://nilpatel.snpsolutions.co.nz)
 
