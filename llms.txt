@@ -59,6 +59,12 @@ Based in Vadodara, Gujarat, India. Supporting clients globally across India, New
 9. **YouTube Automation Agent** (AI & Automation)
    - *Description*: Autonomous Node.js channel daemon executing trend analysis, AI scripting, DALL-E thumbnailing, and scheduling video uploads via YouTube Data API.
    - *Code*: [github.com/nilpatel7530/youtube-automation-agent](https://github.com/nilpatel7530/youtube-automation-agent)
+10. **Zoro Caption Generator Pro** (AI & Automation)
+    - *Description*: Offline high-precision auto-captioning and subtitle styling application. Utilizes Whisper (stable-ts) for word-level sync, featuring a workshop with free-hand draggable placement and professional FFmpeg burning.
+    - *Code*: [github.com/nilpatel7530/zoro-caption-generator-pro](https://github.com/nilpatel7530/zoro-caption-generator-pro)
+11. **Yukti_AI** (AI & Automation)
+    - *Description*: A local-first multi-agent software engineering operating system styled with a Sonoma light-glass aesthetic. Orchestrates cloud/local LLMs (LM Studio/Ollama) with MCP tools to plan, code, test, and commit files.
+    - *Code*: [github.com/nilpatel7530/Yukti_AI](https://github.com/nilpatel7530/Yukti_AI)
 
 ---
 

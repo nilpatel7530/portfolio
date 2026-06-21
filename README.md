@@ -22,6 +22,8 @@ Official portfolio website of **Nil Patel**, a Hugging Face Certified Agent Deve
 7. **NilLeads — AI Client Finder** (AI & Automation) — Local Gemma 4 E4B MoE client scraper and prospect analyzer (128K context window).
 8. **Video Watermark Remover** (Web / Automation) — Automated video crop, blur, and FFmpeg delogo erase prep tool.
 9. **YouTube Automation Agent** (AI & Automation) — Autonomous 24/7 channel daemon for AI scriptwriting, thumbnailing, and scheduling.
+10. **Zoro Caption Generator Pro** (AI & Automation) — Offline high-precision auto-captioning and subtitle styling application using Whisper and FFmpeg.
+11. **Yukti_AI** (AI & Automation) — Local-first multi-agent software engineering operating system with an Apple-inspired Liquid Glass light interface, MCP tools orchestration, smart LLM router, and wake word voice control.
 
 ## 📂 Repository Structure
 

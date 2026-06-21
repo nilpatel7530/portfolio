@@ -150,7 +150,32 @@ Nil Patel is an AI-focused Full-Stack Software Engineer and Hugging Face Certifi
   - Automates 100% of creation-to-publishing tasks for short-form or compilation style channels.
   - Fully local deployment compatibility on VPS or Raspberry Pi.
 
+### 10. Zoro Caption Generator Pro
+- **Category**: Offline High-Precision Auto-Captioning & Styling Tool
+- **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/zoro-caption-generator-pro)
+- **Core Stack**: React, Node.js, Whisper AI (stable-ts), FFmpeg.
+- **Key Architectures**:
+  - High-precision word-level subtitle synchronization using stable-ts Whisper.
+  - Interactive canvas UI allowing free-hand dragging and resizing of captions.
+  - FFmpeg command processing pipeline to burn styled subtitles directly into output video frames.
+- **Impact Metrics**:
+  - Enabled rapid local video caption generation with offline privacy.
+  - Interactive subtitle workshop reduces overall post-production timeline for creators.
+
+### 11. Yukti_AI
+- **Category**: Multi-Agent Software Development Operating System
+- **Source Code**: [GitHub Repository](https://github.com/nilpatel7530/Yukti_AI)
+- **Core Stack**: React, TypeScript, FastAPI, Pydantic, MCP (Model Context Protocol) SDK, Ollama / LM Studio.
+- **Key Architectures**:
+  - Smart router dynamically delegating developer tasks (planning, coding, reviewing, committing) across cloud (Nemotron, Step) and local (LM Studio, Ollama) models.
+  - Sonoma-inspired Apple "Liquid Glass" light interface designed around a classic VS Code layout with vertical tabs, progress timelines, instructions consoles, and Monaco editor.
+  - Voice-activated hands-free orchestration loop integrating Picovoice Porcupine, local Whisper.cpp or cloud Deepgram STT, and Piper TTS feedback.
+- **Impact Metrics**:
+  - Completely decouples AI-assisted software development environments from vendor lock-in.
+  - Local-first architecture allows full codebase search and tool execution offline.
+
 ---
+
 
 ## 🏅 Professional Certifications (Verified Credentials)
 
