@@ -187,7 +187,7 @@
 </nav>
 
 <!-- ═══════════════════════════════════════ HERO -->
-<section class="hero" style="padding: 10rem 0 5rem 0;">
+<section id="hero" class="hero" style="padding: 10rem 0 5rem 0;">
   <div class="hero-blob"></div>
   <div class="hero-blob-2"></div>
   <div class="container">
@@ -232,17 +232,23 @@
             </div>
             <div class="console-viz">
               <div class="viz-node active-pulse">
-                <span class="viz-icon">❓</span>
+                <span class="viz-icon">
+                  <img src="https://cdn.simpleicons.org/json/E8572A" alt="" style="height: 20px; width: auto;" />
+                </span>
                 <span class="viz-label mono">Q&A Data</span>
               </div>
               <div class="viz-connector"><div class="connector-pulse"></div></div>
               <div class="viz-node active-pulse">
-                <span class="viz-icon">🔗</span>
+                <span class="viz-icon">
+                  <img src="https://cdn.simpleicons.org/wikidata/E8572A" alt="" style="height: 20px; width: auto;" />
+                </span>
                 <span class="viz-label mono">Linked Data</span>
               </div>
               <div class="viz-connector"><div class="connector-pulse"></div></div>
               <div class="viz-node">
-                <span class="viz-icon">✅</span>
+                <span class="viz-icon">
+                  <img src="https://cdn.simpleicons.org/openai/E8572A" alt="" style="height: 20px; width: auto;" />
+                </span>
                 <span class="viz-label mono">Crawl Ready</span>
               </div>
             </div>
@@ -540,38 +546,58 @@
     </div>
 
     <div class="contact-grid">
-      <div class="contact-info" data-reveal>
+      <div class="contact-info" data-reveal data-delay="1">
         <p class="contact-blurb">Need a custom AI RAG system, n8n webhook setup, or Laravel ERP dashboard? Get in touch to discuss details.</p>
         <div class="contact-links">
           <a href="mailto:nilpatel7530@gmail.com" class="contact-link-item magnetic">
-            <div class="cli-icon">✉</div>
+            <div class="cli-icon">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <div>
               <div class="cli-label">Email</div>
               <div class="cli-value">nilpatel7530@gmail.com</div>
             </div>
           </a>
+          <a href="https://linkedin.com/in/nilpatel7530" class="contact-link-item magnetic" target="_blank" rel="noopener">
+            <div class="cli-icon">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="cli-label">LinkedIn</div>
+              <div class="cli-value">linkedin.com/in/nilpatel7530</div>
+            </div>
+          </a>
+          <a href="https://github.com/nilpatel7530" class="contact-link-item magnetic" target="_blank" rel="noopener">
+            <div class="cli-icon">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div>
+              <div class="cli-label">GitHub</div>
+              <div class="cli-value">github.com/nilpatel7530</div>
+            </div>
+          </a>
         </div>
       </div>
 
-      <div data-reveal data-delay="1">
+      <div data-reveal data-delay="2">
         <form class="contact-form" id="contactForm" action="#" method="POST">
           <div class="form-2col">
             <div class="form-group">
               <label class="form-label" for="fname">Name</label>
-              <input class="form-control" type="text" id="fname" placeholder="Your name" required />
+              <input class="form-control" type="text" id="fname" name="name" placeholder="Your name" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="femail">Email</label>
-              <input class="form-control" type="email" id="femail" placeholder="you@company.com" required />
+              <input class="form-control" type="email" id="femail" name="email" placeholder="you@company.com" required />
             </div>
           </div>
           <div class="form-group">
             <label class="form-label" for="fsubject">Topic</label>
-            <input class="form-control" type="text" id="fsubject" placeholder="e.g., AI Agents, n8n setup, SaaS pricing..." />
+            <input class="form-control" type="text" id="fsubject" name="subject" placeholder="e.g., AI Agents, n8n setup, SaaS pricing..." />
           </div>
           <div class="form-group">
             <label class="form-label" for="fmessage">Message Details</label>
-            <textarea class="form-control" id="fmessage" placeholder="Ask your question or describe your project goal..." required></textarea>
+            <textarea class="form-control" id="fmessage" name="message" placeholder="Ask your question or describe your project goal..." required></textarea>
           </div>
           <div class="form-submit">
             <button type="submit" class="btn btn-accent magnetic" id="submit-btn">Send Message →</button>
@@ -588,13 +614,18 @@
   <div class="container">
     <div class="footer-inner">
       <p class="footer-copy">© 2026 <span>Nil Patel</span> · AI Developer · Vadodara</p>
-            <div class="footer-links">
-        <a href="index.html">Home</a>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="index.html#about" class="footer-link">About</a>
+        <a href="index.html#portfolio" class="footer-link">Work</a>
         <a href="faq.html" class="footer-link">FAQs</a>
         <a href="knowledge-hub.html" class="footer-link">Knowledge Hub</a>
         <a href="ai-search-visibility.html" class="footer-link">AI Search</a>
         <a href="mailto:nilpatel7530@gmail.com" class="footer-link">Email</a>
       </div>
+      <a href="#hero" class="footer-up" aria-label="Back to top">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+      </a>
     </div>
   </div>
 </footer>

@@ -550,6 +550,12 @@ body.cursor-link #cursor-ring { opacity: 0; }
   transition: all 0.3s;
   z-index: 1;
 }
+.viz-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
 
 .viz-node.active-pulse .viz-icon {
   border-color: var(--accent);
