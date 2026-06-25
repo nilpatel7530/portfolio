@@ -31,7 +31,18 @@
      SHARED CONSTANTS
   ────────────────────────────────────────────────────────── */
   var BASE = 'https://nilpatel.snpsolutions.co.nz';
-  var AREA_SERVED = ['IN', 'NZ', 'AU'];
+  var AREA_SERVED = [
+    'IN', 'NZ', 'AU',
+    { '@type': 'State', 'name': 'Gujarat' },
+    { '@type': 'City', 'name': 'Vadodara' },
+    { '@type': 'City', 'name': 'Ahmedabad' },
+    { '@type': 'City', 'name': 'Surat' },
+    { '@type': 'City', 'name': 'Rajkot' },
+    { '@type': 'City', 'name': 'Anand' },
+    { '@type': 'City', 'name': 'Bharuch' },
+    { '@type': 'City', 'name': 'Nadiad' },
+    { '@type': 'City', 'name': 'Halol' }
+  ];
 
   /* ── Nil Patel — canonical Person entity ── */
   var PERSON = {
@@ -52,7 +63,9 @@
       'LLMO', 'AI SEO', 'Search Everywhere Optimization', 'Full-Stack Web Development',
       'Laravel MVC', 'Next.js', 'RAG Architecture', 'LangChain', 'LangGraph',
       'Google Gemini', 'Gemma', 'n8n Workflow Automation', 'Software Architecture',
-      'Multi-tenant SaaS', 'Database Optimization', 'E-E-A-T Optimization'
+      'Multi-tenant SaaS', 'Database Optimization', 'E-E-A-T Optimization',
+      'Web Development', 'SEO Development', 'E-commerce Development', 'E-commerce Building',
+      'Web Developer', 'SEO Developer'
     ],
     'address': {
       '@type': 'PostalAddress',
@@ -213,6 +226,10 @@
           {
             q: 'What certifications and authority signals back your expertise?',
             a: 'Nil Patel holds 6 fully verified technical certifications: AI Agents Fundamentals (Hugging Face, Apr 2026), Cloud Technical Series: AI in Action (Google Cloud APAC, Apr 2026), AI Tools Workshop (Be10x, Feb 2026), Gemini at Work Edition (ULSA, Nov 2025), ADK Builder\'s Badge (ULSA, Nov 2025), and Prompt Design in Vertex AI (Google, Oct 2025). All credentials include official IDs and public verification links.'
+          },
+          {
+            q: 'Do you provide custom web development, SEO development, or e-commerce builder services in Vadodara, Gujarat, and across India?',
+            a: 'Yes, I provide professional web developer, technical SEO developer, and e-commerce builder services for clients in Vadodara, surrounding cities (such as Anand, Nadiad, Halol, Bharuch, Ahmedabad, Surat, and Rajkot), across Gujarat, and throughout India. I specialize in building custom, high-speed, and secure platforms tailored to the needs of growth-focused SMEs and startups.'
           }
         ])
       },
@@ -241,6 +258,21 @@
         description: 'High-performance multi-tenant B2B SaaS dashboards, database caching, and custom ERP integrations using Laravel framework.',
         url: BASE
       }),
+      buildService({
+        name: 'Full-Stack Web Development',
+        description: 'Custom responsive web applications, secure API backends, and frontend interfaces (React/HTML5) for businesses in Vadodara, Gujarat, and India.',
+        url: BASE
+      }),
+      buildService({
+        name: 'Technical SEO & Search Engine Optimization',
+        description: 'Advanced Technical SEO and search optimization to help business websites in Vadodara, Gujarat, and India rank on Google and AI search engines.',
+        url: BASE + '/ai-search-visibility'
+      }),
+      buildService({
+        name: 'E-commerce Builder & SaaS Development',
+        description: 'Custom e-commerce platforms, payment gateways, and multi-tenant e-commerce store builders for SMEs in Vadodara, Gujarat, and India.',
+        url: BASE
+      }),
       {
         '@context': 'https://schema.org',
         '@type': 'ProfessionalService',
@@ -258,11 +290,7 @@
           'addressRegion': 'Gujarat',
           'addressCountry': 'IN'
         },
-        'areaServed': [
-          { '@type': 'Country', 'name': 'India' },
-          { '@type': 'Country', 'name': 'New Zealand' },
-          { '@type': 'Country', 'name': 'Australia' }
-        ],
+        'areaServed': AREA_SERVED,
         'availableChannel': {
           '@type': 'ServiceChannel',
           'serviceUrl': BASE,
