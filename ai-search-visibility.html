@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -33,20 +33,16 @@ window.PAGE_SCHEMA = {
   offerDescription: 'AI visibility audits and schema graph optimizations.',
   faqs: [
     {
-      q: 'What is AI Search Visibility?',
-      a: 'AI Search Visibility is a unified search strategy that ensures your business is found and cited by both traditional Google crawlers and conversational AI answer engines (like SearchGPT, Perplexity, Gemini, and Claude).'
+      q: 'Why does my website need AI Search Visibility?',
+      a: 'Your website needs AI Search Visibility because over 40% of search traffic is transitioning to AI answer engines like Perplexity, ChatGPT Search, and Gemini. Without structured schemas and direct Q&A formatting, AI crawlers will overlook your content and cite competitors instead.'
     },
     {
-      q: 'How do Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO) differ from traditional SEO?',
-      a: 'Traditional SEO focuses on page-level keywords and backlinks to rank in blue links. AEO/GEO formats your content directly as structured entities, Q&A blocks, and semantic text grids so AI synthesis loops can parse, citation-validate, and reference your domain inside chat responses.'
+      q: 'What is an llms.txt file and do you configure it?',
+      a: 'Yes, we configure and install llms.txt files at your root directory to serve as a machine-readable markdown map for LLM crawlers. This file guides AI agents directly to clear, structured summaries of your website content, speeding up accurate ingestion.'
     },
     {
-      q: 'How long does it take to see results from GEO/AEO optimization?',
-      a: 'Structural schema implementations (JSON-LD, llms.txt, sitemap updates) are indexed within 2–4 weeks. Content entity optimization and citation building in AI responses typically shows measurable improvement within 6–10 weeks as AI crawlers refresh their indexes.'
-    },
-    {
-      q: 'What deliverables do I receive from an AI Search Visibility audit?',
-      a: 'You receive a complete technical audit report, custom JSON-LD schema files for all key pages, an llms.txt and llms-full.txt for your domain, content restructuring recommendations, and an entity graph mapping your business relationships for AI engine citation.'
+      q: 'How long does it take to see results in AI answers?',
+      a: 'Websites often see improved citation ranking and query relevance inside AI answers within 3 to 6 weeks. While traditional SEO takes months, AI models frequently refresh their context caches and index updated entity schemas quickly.'
     }
   ]
 };
@@ -270,40 +266,40 @@ window.PAGE_SCHEMA = {
   <div class="container">
     <div style="max-width: 800px; margin: 0 auto 3rem auto;" data-reveal>
       <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">AI Search <em>FAQs</em></h2>
-      <div class="faq-list">
+      <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
         
-        <div class="faq-row" id="faq-v1">
+        <div class="faq-row" id="faq-v1" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-v1')">
-            <h3 class="faq-question">Why does my website need AI Search Visibility?</h3>
+            <h3 class="faq-question" itemprop="name">Why does my website need AI Search Visibility?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              More than 40% of search traffic is migrating toward answer assistants (like Perplexity and ChatGPT Search). If your site lacks clean schema graphs, direct answer formatting, and verified E-E-A-T credentials, AI search agents will bypass your domain and reference your competitors instead.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              Your website needs AI Search Visibility because over 40% of search traffic is transitioning to AI answer engines like Perplexity, ChatGPT Search, and Gemini. Without structured schemas and direct Q&A formatting, AI crawlers will overlook your content and cite competitors instead.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-v2">
+        <div class="faq-row" id="faq-v2" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-v2')">
-            <h3 class="faq-question">What is an llms.txt file and do you configure it?</h3>
+            <h3 class="faq-question" itemprop="name">What is an llms.txt file and do you configure it?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              Yes, we configure and implement llms.txt files. A llms.txt file is a machine-readable directory containing markdown summaries of your website's content, specifically optimized for LLM crawler ingestion. It sits at your root directory, pointing AI models straight to the files they need to synthesize your details.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              Yes, we configure and install llms.txt files at your root directory to serve as a machine-readable markdown map for LLM crawlers. This file guides AI agents directly to clear, structured summaries of your website content, speeding up accurate ingestion.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-v3">
+        <div class="faq-row" id="faq-v3" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-v3')">
-            <h3 class="faq-question">How long does it take to see results in AI answers?</h3>
+            <h3 class="faq-question" itemprop="name">How long does it take to see results in AI answers?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              Unlike traditional SEO which takes months, AI models scrape index caches frequently. By updating entity structures and JSON-LD schemas, websites often see improved citation matching and query relevance in AI answers within 3 to 6 weeks.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              Websites often see improved citation ranking and query relevance inside AI answers within 3 to 6 weeks. While traditional SEO takes months, AI models frequently refresh their context caches and index updated entity schemas quickly.
             </div>
           </div>
         </div>

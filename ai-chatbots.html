@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -33,20 +33,16 @@ window.PAGE_SCHEMA = {
   offerDescription: 'Custom customer support integration packages.',
   faqs: [
     {
-      q: 'What is an AI chatbot?',
-      a: 'An AI chatbot is a conversational software application powered by Large Language Models (LLMs) that can understand complex user prompts, parse context, query business databases, and respond in natural human dialogue.'
+      q: 'What LLM APIs do you recommend for business chatbots?',
+      a: 'We recommend Google Gemini 3.5 Flash or OpenAI GPT-4o-mini for general speed and cost efficiency, and GPT-4o or Claude 3.5 Sonnet for highly complex technical domains. We use dynamic prompt logic to automatically select the most cost-effective model depending on each user\'s query complexity.'
     },
     {
-      q: 'How much does it cost to build a customer support AI chatbot?',
-      a: 'Building a custom business chatbot ranges from $1,000 for standard API interfaces up to $3,500 for fully integrated solutions containing custom databases, CRM linkages, and automated handoffs.'
+      q: 'Can the chatbot collect user contact info and push it to my CRM?',
+      a: 'Yes, the chatbot can collect user details via function calling and push them directly to HubSpot, Zoho, or your custom database. When a user requests pricing, the bot structures their contact data into JSON and triggers a webhook.'
     },
     {
-      q: 'Can my chatbot integrate with WhatsApp?',
-      a: 'Yes. I implement WhatsApp Business API integrations that allow your chatbot to handle customer queries, send notifications, capture lead details, and route conversations to human agents — all within the WhatsApp interface your customers already use.'
-    },
-    {
-      q: 'How do AI chatbots differ from rule-based bots?',
-      a: 'Rule-based bots follow fixed decision trees and break when users phrase queries unexpectedly. AI-powered chatbots understand natural language intent using LLMs, adapt dynamically to context, handle unexpected inputs gracefully, and learn from conversation history to improve responses.'
+      q: 'How does human handoff work?',
+      a: 'The chatbot triggers an automated handoff event if it fails to answer a query within two turns or if the user requests human assistance. It sends a WhatsApp notification or email alert to your support team along with the full conversation history.'
     }
   ]
 };
@@ -261,7 +257,7 @@ window.PAGE_SCHEMA = {
       <div class="svc-card" style="grid-column: 5 / 7;" data-reveal data-delay="2">
         <div class="svc-icon">⚙️</div>
         <h3 class="svc-title">Our Technical Stack</h3>
-        <p class="svc-desc">Leveraging GPT-4o and Google Gemini APIs alongside custom-built Node.js socket backends, secure database routing, and WhatsApp Cloud API integrations configured manually for high-volume enterprise traffic.</p>
+        <p class="svc-desc">Leveraging GPT-4o and Google Gemini APIs alongside custom-built Node.js socket backends, secure database routing, and WhatsApp Cloud API integrations configured manually for high-volume business traffic.</p>
       </div>
 
     </div>
@@ -273,40 +269,40 @@ window.PAGE_SCHEMA = {
   <div class="container">
     <div style="max-width: 800px; margin: 0 auto 3rem auto;" data-reveal>
       <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">AI Chatbot <em>FAQs</em></h2>
-      <div class="faq-list">
+      <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
         
-        <div class="faq-row" id="faq-c1">
+        <div class="faq-row" id="faq-c1" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-c1')">
-            <h3 class="faq-question">What LLM APIs do you recommend for business chatbots?</h3>
+            <h3 class="faq-question" itemprop="name">What LLM APIs do you recommend for business chatbots?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              For general conversational speed and low cost, we recommend Google Gemini 3.5 Flash or OpenAI GPT-4o-mini. For highly complex reasoning and technical support domains, GPT-4o or Claude 3.5 Sonnet are excellent options. We structure prompt templates to select the most cost-effective model depending on query complexity.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              We recommend Google Gemini 3.5 Flash or OpenAI GPT-4o-mini for general speed and cost efficiency, and GPT-4o or Claude 3.5 Sonnet for highly complex technical domains. We use dynamic prompt logic to automatically select the most cost-effective model depending on each user's query complexity.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-c2">
+        <div class="faq-row" id="faq-c2" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-c2')">
-            <h3 class="faq-question">Can the chatbot collect user contact info and push it to my CRM?</h3>
+            <h3 class="faq-question" itemprop="name">Can the chatbot collect user contact info and push it to my CRM?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              Yes. We program custom function calling triggers. When a user expresses interest or requests pricing, the chatbot gathers their name, email, and description, structures it into a clean JSON format, and calls a webhook to push it directly to Hubspot, Zoho, or your custom Laravel dashboard database.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              Yes, the chatbot can collect user details via function calling and push them directly to HubSpot, Zoho, or your custom database. When a user requests pricing, the bot structures their contact data into JSON and triggers a webhook.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-c3">
+        <div class="faq-row" id="faq-c3" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-c3')">
-            <h3 class="faq-question">How does human handoff work?</h3>
+            <h3 class="faq-question" itemprop="name">How does human handoff work?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              If the chatbot fails to answer a query within two turns, or if a user specifically requests a human agent, the chatbot triggers a handoff event. It sends a WhatsApp notification or email alert to your team containing the full conversation history, allowing a human rep to step in immediately.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              The chatbot triggers an automated handoff event if it fails to answer a query within two turns or if the user requests human assistance. It sends a WhatsApp notification or email alert to your support team along with the full conversation history.
             </div>
           </div>
         </div>

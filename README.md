@@ -58,7 +58,7 @@ portfolio/
 │   ├── goswamisangath.webp     # Project screenshot — Goswami Sangath
 │   ├── suyoglife.webp          # Project screenshot — Suyog Life
 │   ├── celsrs.webp             # Project screenshot — Creative Engineering SRS
-│   ├── enterprisehrms.webp     # Project screenshot — Enterprise HRMS
+│   ├── enterprisehrms.webp     # Project screenshot — B2B HRMS
 │   ├── trustlineenergy.webp    # Project screenshot — TrustLine Energy
 │   ├── leadgenpro.png          # Project screenshot — LeadGen Pro
 │   ├── nilleads.png            # Project screenshot — NilLeads AI
@@ -262,7 +262,7 @@ Then open `http://localhost:8000` in your browser.
 | 2 | **Goswami Sangath Matrimonial** | SaaS | [Demo](https://goswamisangath.in/admin) |
 | 3 | **Suyog Matrimonial Platform** | SaaS | [Live](https://www.suyog.life/) |
 | 4 | **Creative Engineering SRS (ERM)** | CRM / ERP | [Demo](https://srs.developmentdemo.co.in/login) |
-| 5 | **Enterprise HRMS Dashboard** | SaaS | [Demo](https://hrms.developmentdemo.co.in/login) |
+| 5 | **B2B HRMS Dashboard** | SaaS | [Demo](https://hrms.developmentdemo.co.in/login) |
 | 6 | **TrustLine Energy Platform** | Web | [Live](https://trustlineenergy.com/) |
 | 7 | **NilLeads — AI Client Finder** | AI & Automation | [GitHub](https://github.com/nilpatel7530/leadscraper) |
 | 8 | **Video Watermark Remover** | Automation Tool | [GitHub](https://github.com/nilpatel7530/video_watermark_remover_by_Nil_Patel) |

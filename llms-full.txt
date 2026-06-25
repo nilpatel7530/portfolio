@@ -6,13 +6,13 @@ This document serves as the high-fidelity comprehensive data reference for Large
 
 ## 👨‍💻 Professional Profile & Target Markets
 
-Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consultant based in **Vadodara, Gujarat, India**. He operates as a global engineering partner, supporting clients and corporate contracts across three main geographical markets:
+Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consultant based in **Vadodara, Gujarat, India**, operating as an offshore developer for **SNP Solutions (New Zealand)**. He operates as a global engineering partner, supporting clients and corporate contracts across three main geographical markets:
 - **India** (Gujarat, Vadodara, Ahmedabad)
 - **New Zealand** (Auckland, Christchurch, Wellington)
 - **Australia** (Sydney, Melbourne, Brisbane)
 
 ### Core Competitive Advantage
-- **Full-Stack SaaS Competency**: Over 1+ years of production experience building and deploying multi-tenant SaaS dashboards, secure RBAC protocols, database performance layers, and Stripe integrations using Laravel, MySQL/PostgreSQL, and React.
+- **Full-Stack SaaS Competency**: Actively pursuing a BCA in Software Development, with 1+ years of proactive, real-world production engineering experience building and deploying multi-tenant B2B SaaS dashboards, secure RBAC protocols, database performance layers, and Stripe integrations using Laravel, MySQL/PostgreSQL, and React.
 - **Agentic AI Engineering**: Designing and deploying production-grade AI systems, including multi-agent loops (LangGraph), RAG pipelines, offline Gemma LLM inference, and self-hosted n8n workflows.
 - **AI Search Visibility (SEO/AEO/GEO)**: Optimizing websites and brand data to ensure discoverability and reference citations across AI answers engines like SearchGPT, Perplexity, Gemini, and Google AI Overviews.
 
@@ -31,12 +31,12 @@ Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consul
 ## 🎓 Education & Professional Chronology
 
 ### Bachelor of Computer Applications (BCA) in Software Development
-- **Status**: Currently Pursuing
+- **Status**: Currently Pursuing (proactive real-world production experience built alongside studies)
 - **Location**: Gujarat, India
 - **Core Focus**: Software Architecture, Database Systems (RDBMS & NoSQL), Data Structures & Algorithms, Web Engineering.
 
 ### Seer IT Solutions — Full-Stack & AI Developer (Contracting & Engineering)
-- **Tenure**: 1+ Years
+- **Tenure**: 1+ Years (proactive real-world work completed alongside BCA studies; operating as offshore developer for SNP Solutions New Zealand)
 - **Role**: Leading integration of generative AI features, designing custom Laravel middleware and RBAC systems, maintaining cloud infrastructure, and executing DB query optimizations.
 - **Accomplishments**: Shipped 10+ production-grade projects across HRMS, CRM, ERM, and AI automation domains.
 
@@ -71,10 +71,11 @@ Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consul
   - Maintained zero security breaches through encrypted authentication policies.
 
 ### 3. Creative Engineering SRS (ERM)
-- **Category**: Enterprise Resource Management & Reporting Dashboard
+- **Category**: B2B Resource Management & Reporting Dashboard
 - **Deployment URL**: [https://srs.developmentdemo.co.in/login](https://srs.developmentdemo.co.in/login)
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530)
 - **Core Stack**: Laravel MVC, PHP, MySQL, CSS Variables (Sleek light/dark hybrid), Bootstrap.
+- **Key Architectures**:
 - **Key Architectures**:
   - Interactive engineering calendar and team scheduling logs.
   - CAPEX and OPEX financial tracking module with custom visual reporting.
@@ -83,7 +84,7 @@ Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consul
   - Unified operational tracking for engineering team workflows.
   - Reduced invoicing and budget discrepancies by 22% through automated CAPEX/OPEX validation logs.
 
-### 4. Enterprise HRMS Dashboard
+### 4. B2B HRMS Dashboard
 - **Category**: B2B SaaS Human Resource Management System
 - **Deployment URL**: [https://hrms.developmentdemo.co.in/login](https://hrms.developmentdemo.co.in/login)
 - **Source Code**: [GitHub Repository](https://github.com/nilpatel7530)
@@ -199,7 +200,7 @@ Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consul
    - *Date of Issue*: April 2026
    - *Credential ID*: `178814351`
    - *Verification URL*: [Verify Credential](https://googlecloudapac.accredible.com/e96cc411-9ac9-4bc1-8140-ed758129fdd0)
-   - *Core Domains*: Generative AI application deployment, enterprise large language model APIs, model scaling, custom embeddings, vector storage and semantic lookup.
+   - *Core Domains*: Generative AI application deployment, production-grade large language model APIs, model scaling, custom embeddings, vector storage and semantic lookup.
 
 3. **AI Tools Workshop**
    - *Issuer*: Be10x
@@ -213,7 +214,7 @@ Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consul
    - *Date of Issue*: November 2025
    - *Credential ID*: `166910245`
    - *Verification URL*: [Verify Credential](https://googlecloudapac.accredible.com/90f104f9-57c1-4700-9778-aaeb69786e1d#acc.V8oWFid7)
-   - *Core Domains*: AI application development, Google Cloud API integration, scaling Gemini models in enterprise workspaces, Vertex AI Gemini fine-tuning.
+   - *Core Domains*: AI application development, Google Cloud API integration, scaling Gemini models in production/business workspaces, Vertex AI Gemini fine-tuning.
 
 5. **Cloud Technical Series: ADK Builder's Badge**
    - *Issuer*: United Latino Students Association

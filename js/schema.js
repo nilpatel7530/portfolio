@@ -44,7 +44,7 @@
     'gender': 'http://schema.org/Male',
     'jobTitle': 'AI-Augmented Engineer & AI Search Visibility Consultant',
     'image': BASE + '/headshot.jpg',
-    'description': 'AI-Augmented Software Engineer & AI Search Visibility Consultant. Hugging Face Certified Agent Developer specializing in multi-agent workflows, scalable Laravel SaaS platforms, custom RAG architectures, and search visibility optimization (SEO, AEO, and GEO) serving clients globally across India, NZ, and Australia.',
+    'description': 'AI-Augmented Software Engineer & AI Search Visibility Consultant, actively pursuing a BCA in Software Development. Hugging Face Certified Agent Developer operating as an offshore developer for SNP Solutions (New Zealand) from Vadodara, Gujarat, India. Specializes in B2B SaaS platforms (Laravel), custom RAG architectures, multi-agent workflows, and search visibility optimization (SEO, AEO, GEO) for SMEs and startups across India, NZ, and Australia.',
     'url': BASE,
     'email': 'nilpatel7530@gmail.com',
     'knowsAbout': [
@@ -63,7 +63,7 @@
     'alumniOf': {
       '@type': 'EducationalOrganization',
       'name': 'Gujarat University System',
-      'description': 'Bachelor of Computer Applications (BCA) in Software Development'
+      'description': 'Bachelor of Computer Applications (BCA) in Software Development — currently pursuing alongside 1+ years of real-world production engineering experience'
     },
     'hasCredential': [
       {
@@ -196,23 +196,23 @@
         'mainEntity': buildFAQItems([
           {
             q: 'Who is Nil Patel and what is his technical specialization?',
-            a: 'Nil Patel is an AI-Augmented Software Engineer & AI Search Visibility Consultant. He specializes in designing multi-agent workflows, scalable Laravel SaaS platforms, custom RAG architectures, and search visibility optimization (SEO, AEO, and GEO) serving clients globally across India, NZ, and Australia.'
+            a: 'Nil Patel is an AI-Augmented Software Engineer & AI Search Visibility Consultant based in Vadodara, India, working as an offshore developer for SNP Solutions (New Zealand). He specializes in designing multi-agent workflows, scalable B2B SaaS platforms (Laravel), custom RAG architectures, and search visibility optimization (SEO, AEO, and GEO) for SMEs and startups across India, NZ, and Australia.'
           },
           {
             q: 'What is your engineering philosophy as an AI-augmented developer?',
-            a: 'My philosophy is that AI accelerates development but human engineering ensures production readiness. I leverage multi-agent loops to write tests, write documentation, and generate boilerplate code quickly (reducing time-to-market), while personally auditing the critical layers AI cannot reliably solve: scalable system architecture, granular security schemas, API caching, database optimization, and high-performance server configurations.'
+            a: 'AI accelerates development speed, but human engineering ensures production reliability. I use multi-agent loops to write tests, generate documentation, and build boilerplate quickly — then personally audit the layers AI cannot reliably solve: scalable system architecture, granular security schemas, API caching, database optimization, and high-performance server configurations.'
           },
           {
             q: 'What is AI Search Visibility (AEO/GEO) and how does it benefit my business?',
-            a: 'AI Search Visibility (SEO + AEO + GEO) is a unified strategy that ensures your business profile, services, and content are crawled, indexed, and cited by AI-powered search engines (like ChatGPT Search, Gemini, Claude, Perplexity, and Google AI Overviews). By implementing structured schema markup, entity optimization, and machine-readable files (like llms.txt), we ensure AI engines recommend your business as the primary solution for search queries in your domain.'
+            a: 'AI Search Visibility ensures your business is cited by AI-powered answer engines like ChatGPT, Gemini, Claude, and Perplexity — not just ranked on Google. It combines Technical SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO) by implementing structured schema markup, entity graphs, and machine-readable files (llms.txt) so AI engines surface your business first for relevant queries in your domain.'
           },
           {
             q: 'Who is your target client and what projects do you build?',
-            a: 'I work with founders, startups, agencies, SMEs, and enterprise companies. I build custom multi-role SaaS platforms, autonomous workflow automations (n8n, CRM/ERP integrations), vector-based data systems (RAG), and comprehensive AI search visibility setups designed to scale securely under real production loads.'
+            a: 'My target clients are founders, startups, and SMEs who need production-ready AI systems without big-tech budgets. I build custom multi-role B2B SaaS platforms, autonomous workflow automations (n8n, CRM/ERP integrations), vector-based RAG search systems, and comprehensive AI search visibility setups — all engineered to scale securely under real production loads.'
           },
           {
             q: 'What certifications and authority signals back your expertise?',
-            a: 'Nil Patel holds 6 major technical certifications: AI Agents Fundamentals (Hugging Face), Cloud Technical Series - AI in Action (Google Cloud APAC), AI Tools Workshop (Be10x), Cloud Technical Series - Gemini at Work Edition (ULSA), Cloud Technical Series: ADK Builder\'s Badge (ULSA), and Prompt Design in Vertex AI Skill Badge (Google). All certifications are fully verified with official IDs and public verification links.'
+            a: 'Nil Patel holds 6 fully verified technical certifications: AI Agents Fundamentals (Hugging Face, Apr 2026), Cloud Technical Series: AI in Action (Google Cloud APAC, Apr 2026), AI Tools Workshop (Be10x, Feb 2026), Gemini at Work Edition (ULSA, Nov 2025), ADK Builder\'s Badge (ULSA, Nov 2025), and Prompt Design in Vertex AI (Google, Oct 2025). All credentials include official IDs and public verification links.'
           }
         ])
       },
@@ -238,9 +238,53 @@
       }),
       buildService({
         name: 'Laravel SaaS Development',
-        description: 'High-performance multi-tenant SaaS dashboards, database caching, and custom ERP integrations using Laravel framework.',
+        description: 'High-performance multi-tenant B2B SaaS dashboards, database caching, and custom ERP integrations using Laravel framework.',
         url: BASE
-      })
+      }),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        '@id': BASE + '/#localbusiness',
+        'name': 'Nil Patel — AI Developer & Full-Stack Engineer',
+        'description': 'Offshore AI developer and full-stack software engineer based in Vadodara, India, partnered with SNP Solutions (New Zealand). Delivers B2B SaaS, AI automation, RAG pipelines, and AI search visibility consulting for clients in India, New Zealand, and Australia.',
+        'url': BASE,
+        'image': BASE + '/headshot.jpg',
+        'telephone': null,
+        'email': 'nilpatel7530@gmail.com',
+        'priceRange': '$$',
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': 'Vadodara',
+          'addressRegion': 'Gujarat',
+          'addressCountry': 'IN'
+        },
+        'areaServed': [
+          { '@type': 'Country', 'name': 'India' },
+          { '@type': 'Country', 'name': 'New Zealand' },
+          { '@type': 'Country', 'name': 'Australia' }
+        ],
+        'availableChannel': {
+          '@type': 'ServiceChannel',
+          'serviceUrl': BASE,
+          'availableLanguage': 'English',
+          'serviceLocation': {
+            '@type': 'VirtualLocation',
+            'description': 'Remote / offshore delivery. Based in Vadodara, India, operating as offshore developer for SNP Solutions, New Zealand.'
+          }
+        },
+        'parentOrganization': {
+          '@type': 'Organization',
+          'name': 'SNP Solutions',
+          'address': {
+            '@type': 'PostalAddress',
+            'addressCountry': 'NZ'
+          }
+        },
+        'sameAs': [
+          'https://github.com/nilpatel7530',
+          'https://linkedin.com/in/nilpatel7530'
+        ]
+      }
     ];
   }
 

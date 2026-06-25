@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -33,20 +33,16 @@ window.PAGE_SCHEMA = {
   offerDescription: 'Self-hosted n8n instances and optimized business process flow charts.',
   faqs: [
     {
-      q: 'Can n8n replace Zapier?',
-      a: 'Yes. n8n serves as a powerful replacement for Zapier. It provides visual node editor features, supports inline JavaScript/Python, can be self-hosted on local servers with zero per-run execution fees, and offers a massive library of native integrations.'
+      q: 'Can n8n really replace Zapier for all my business workflows?',
+      a: 'Yes, n8n can replace Zapier in almost all business scenarios while offering greater flexibility and lower costs. By supporting native HTTP requests and allowing custom JavaScript code execution inside any node, n8n handles data cleanup and complex logic loops far better than Zapier\'s standard filters.'
     },
     {
-      q: 'How much does a typical n8n automation project cost?',
-      a: 'Basic workflow triggers and CRM mappings cost between $500 and $1,500. Advanced configurations involving multi-step data parsing, custom code nodes, and LLM agent linkages range from $2,000 to $3,500.'
+      q: 'How does hosting a self-hosted n8n instance work?',
+      a: 'We deploy n8n inside a containerized Docker setup on a secure cloud server (like GCP, DigitalOcean, or Railway) mapped to your custom subdomain. This setup includes SSL encryption, admin authentication layers, database configuration, and automated daily backups to ensure your data stays private and secure.'
     },
     {
-      q: 'What platforms can n8n integrate with?',
-      a: 'n8n integrates natively with 400+ platforms including Salesforce, HubSpot, Slack, Gmail, WhatsApp Business API, MySQL, PostgreSQL, Stripe, and any REST/GraphQL API. Custom HTTP nodes handle any additional endpoints.'
-    },
-    {
-      q: 'Can n8n run AI-powered workflows?',
-      a: 'Yes. n8n has native AI Agent and LLM chain nodes that connect to OpenAI, Google Gemini, Anthropic Claude, and local Ollama/LM Studio endpoints, enabling fully automated AI-driven decision flows within your business pipeline.'
+      q: 'Can you connect n8n workflows with AI models?',
+      a: 'Yes, n8n integrates natively with AI models (Google Gemini, OpenAI, Claude) and Vector Databases (Pinecone, ChromaDB) via built-in advanced LangChain nodes. This enables the creation of autonomous email responders, intelligent document parsers, and Slack agent daemons directly in your visual workflow maps.'
     }
   ]
 };
@@ -144,7 +140,7 @@ window.PAGE_SCHEMA = {
               <div class="code-line"><span class="code-prompt">n8n</span> Running webhook trigger node...</div>
               <div class="code-line info">> Received: Stripe checkout session payload [ID: 994]</div>
               <div class="code-line info">> Executing Router: Check subscription type...</div>
-              <div class="code-line success">✓ Plan matches "Enterprise SaaS". Routing...</div>
+              <div class="code-line success">✓ Plan matches "B2B SaaS". Routing...</div>
               <div class="code-line info">> Executing Node: Create Salesforce Lead Profile</div>
               <div class="code-line success">✓ DB updated. Active slack ping dispatched.</div>
             </div>
@@ -273,40 +269,40 @@ window.PAGE_SCHEMA = {
   <div class="container">
     <div style="max-width: 800px; margin: 0 auto 3rem auto;" data-reveal>
       <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">n8n <em>FAQs</em></h2>
-      <div class="faq-list">
+      <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
         
-        <div class="faq-row" id="faq-n1">
+        <div class="faq-row" id="faq-n1" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-n1')">
-            <h3 class="faq-question">Can n8n really replace Zapier for all my business workflows?</h3>
+            <h3 class="faq-question" itemprop="name">Can n8n really replace Zapier for all my business workflows?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              Yes, in almost all scenarios. n8n supports thousands of direct app integrations. For any unsupported software, we configure native HTTP request nodes to communicate directly with their REST APIs. Additionally, n8n's capability to run custom JavaScript within any node makes it vastly more capable than Zapier for data cleanup and complex parsing tasks.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              Yes, n8n can replace Zapier in almost all business scenarios while offering greater flexibility and lower costs. By supporting native HTTP requests and allowing custom JavaScript code execution inside any node, n8n handles data cleanup and complex logic loops far better than Zapier's standard filters.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-n2">
+        <div class="faq-row" id="faq-n2" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-n2')">
-            <h3 class="faq-question">How does hosting a self-hosted n8n instance work?</h3>
+            <h3 class="faq-question" itemprop="name">How does hosting a self-hosted n8n instance work?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              We deploy n8n in a containerized Docker setup on a secure, lightweight cloud server (such as GCP, DigitalOcean, or Railway) mapped to your subdomain. We set up SSL certificates, secure the instance behind administrative auth layers, configure automatic database backups, and connect webhook listeners.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              We deploy n8n inside a containerized Docker setup on a secure cloud server (like GCP, DigitalOcean, or Railway) mapped to your custom subdomain. This setup includes SSL encryption, admin authentication layers, database configuration, and automated daily backups to ensure your data stays private and secure.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-n3">
+        <div class="faq-row" id="faq-n3" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-n3')">
-            <h3 class="faq-question">Can you connect n8n workflows with AI models?</h3>
+            <h3 class="faq-question" itemprop="name">Can you connect n8n workflows with AI models?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              Yes. n8n includes advanced Advanced AI nodes that support LangChain integrations. This allows us to hook up custom LLM providers (Google Gemini, OpenAI, Claude) and vector store search databases (Pinecone, ChromaDB) directly into visual workflow maps to build autonomous chat, email, or Slack daemons.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              Yes, n8n integrates natively with AI models (Google Gemini, OpenAI, Claude) and Vector Databases (Pinecone, ChromaDB) via built-in advanced LangChain nodes. This enables the creation of autonomous email responders, intelligent document parsers, and Slack agent daemons directly in your visual workflow maps.
             </div>
           </div>
         </div>

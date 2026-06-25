@@ -1,18 +1,18 @@
 # Nil Patel
 
-AI-Augmented Software Engineer & AI Search Visibility Consultant specializing in Laravel SaaS, multi-agent orchestrations, RAG pipelines, and unified search visibility (SEO/AEO/GEO).
+AI-Augmented Software Engineer & AI Search Visibility Consultant specializing in B2B Laravel SaaS, multi-agent orchestrations, RAG pipelines, and unified search visibility (SEO/AEO/GEO).
 
-Based in Vadodara, Gujarat, India. Supporting clients globally across India, New Zealand (Auckland), and Australia (Sydney).
+Based in Vadodara, Gujarat, India. Operating as an offshore developer for SNP Solutions (New Zealand), supporting clients globally across India, NZ, and Australia.
 
 ---
 
 ## ⚡ Executive Summary
 
 - **Role**: AI-Augmented Engineer & AI Search Visibility Consultant
-- **Experience**: 1+ years of hands-on enterprise software & AI automation engineering
-- **Current Pursuits**: BCA in Software Development
+- **Experience**: 1+ years of proactive, real-world production engineering completed alongside studies
+- **Current Pursuits**: Currently pursuing a Bachelor of Computer Applications (BCA) in Software Development
 - **Credentials**: Hugging Face Certified Agent Developer, AI Agents Fundamentals (Hugging Face), Cloud Technical Series: AI in Action (Google Cloud), Prompt Design in Vertex AI, Cloud ADK Builder, Gemini at Work Edition, AI Tools Workshop (Be10x)
-- **Domain Focus**: Enterprise SaaS architecture, multi-agent workflows, RAG search engines, workflow orchestration (n8n), and AI Search Visibility (SEO, AEO, and GEO citation grids).
+- **Domain Focus**: B2B SaaS architecture, production-grade applications, multi-agent workflows, RAG search engines, workflow orchestration (n8n), and AI Search Visibility (SEO, AEO, and GEO citation grids).
 - **GitHub**: [github.com/nilpatel7530](https://github.com/nilpatel7530)
 - **LinkedIn**: [linkedin.com/in/nilpatel7530](https://linkedin.com/in/nilpatel7530)
 - **Website**: [nilpatel.snpsolutions.co.nz](https://nilpatel.snpsolutions.co.nz)
@@ -46,9 +46,9 @@ Based in Vadodara, Gujarat, India. Supporting clients globally across India, New
    - *Description*: Community matrimonial matchmaking platform featuring custom profile workflows, secure 2FA admin authentication, and multi-role RBAC.
    - *Demo*: [goswamisangath.in/admin](https://goswamisangath.in/admin)
 3. **Creative Engineering SRS (ERM)** (CRM)
-   - *Description*: Enterprise-grade ERP portal for team scheduling, CAPEX/OPEX invoice tracking, and granular module-level permission matrices.
+   - *Description*: Production-grade ERP portal for team scheduling, CAPEX/OPEX invoice tracking, and granular module-level permission matrices.
    - *Demo*: [srs.developmentdemo.co.in/login](https://srs.developmentdemo.co.in/login)
-4. **Enterprise HRMS Dashboard** (SaaS)
+4. **B2B HRMS Dashboard** (SaaS)
    - *Description*: Complete human resources management system with attendance logs, employee lifecycle tools, and dual English/Arabic RTL multi-language support.
    - *Demo*: [hrms.developmentdemo.co.in/login](https://hrms.developmentdemo.co.in/login)
 5. **Suyog Matrimonial Platform** (SaaS)

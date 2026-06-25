@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -33,20 +33,16 @@ window.PAGE_SCHEMA = {
   offerDescription: 'Custom database integrations using vector endpoints.',
   faqs: [
     {
-      q: 'What is RAG (Retrieval-Augmented Generation)?',
-      a: 'RAG is an AI framework that retrieves relevant text passages from a private database or document store (vector database) and feeds them as context to an LLM alongside the query, ensuring the model\'s responses are accurate, grounded, and free of hallucinations.'
+      q: 'What is RAG and how does it prevent AI hallucinations?',
+      a: 'RAG prevents AI hallucinations by retrieving exact passages from your private vector index before sending the user\'s query to the LLM. The system instructs the model to generate its response using only this retrieved context, ensuring fact-based outputs with clear citation roots.'
     },
     {
-      q: 'Why is RAG better than fine-tuning a model?',
-      a: 'RAG is vastly superior to fine-tuning for business applications. It allows real-time data updates without expensive training cycles, maintains clear source citations, respects access control permissions, and costs a fraction of model training runs.'
+      q: 'What vector database should my business use?',
+      a: 'The best vector database depends on your scaling needs: Pinecone is ideal for low-overhead serverless cloud deployments, Weaviate is excellent for self-hosted hybrid search, and pgvector is the most cost-effective option for extending an existing PostgreSQL database. We select and configure the database matching your security and scale requirements.'
     },
     {
-      q: 'Which vector databases do you work with?',
-      a: 'I build RAG pipelines using Pinecone (managed cloud), ChromaDB (lightweight local), Weaviate (hybrid search), and pgvector (PostgreSQL extension) — selecting the best fit based on your scale, latency requirements, and existing infrastructure.'
-    },
-    {
-      q: 'Can RAG work with my existing company documents?',
-      a: 'Yes. The RAG ingestion pipeline supports PDFs, Word documents, plain text, web pages, databases, and APIs. Documents are chunked, embedded using models like text-embedding-ada-002 or local alternatives, and stored in a queryable vector index.'
+      q: 'How does data privacy work with custom RAG setups?',
+      a: 'We enforce data privacy in custom RAG setups by applying metadata role filters to all vector query executions. When a user prompts the system, the retrieval step matches text chunks against their authorization level, ensuring sensitive company documents are only shown to allowed roles.'
     }
   ]
 };
@@ -113,7 +109,7 @@ window.PAGE_SCHEMA = {
       <div class="hero-content">
         <p class="section-kicker" data-reveal data-delay="1">Specialized Service</p>
         <h1 class="section-title" style="font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; margin-bottom: 1.5rem;" data-reveal data-delay="2">
-          Enterprise <em>RAG &amp; Vector</em><br>Development
+          Production <em>RAG &amp; Vector</em><br>Development
         </h1>
         <p class="section-sub" style="max-width: 600px; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;" data-reveal data-delay="3">
           Eliminate AI hallucinations by building high-performance semantic search systems. Securely index company files, FAQs, and database records to guide LLM responses.
@@ -271,40 +267,40 @@ window.PAGE_SCHEMA = {
   <div class="container">
     <div style="max-width: 800px; margin: 0 auto 3rem auto;" data-reveal>
       <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">RAG <em>FAQs</em></h2>
-      <div class="faq-list">
+      <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
         
-        <div class="faq-row" id="faq-r1">
+        <div class="faq-row" id="faq-r1" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-r1')">
-            <h3 class="faq-question">What is RAG and how does it prevent AI hallucinations?</h3>
+            <h3 class="faq-question" itemprop="name">What is RAG and how does it prevent AI hallucinations?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              AI hallucinations occur when a model lacks specific knowledge and fabricates details. RAG (Retrieval-Augmented Generation) prevents this by querying a vector index of your uploaded files first. It retrieves the exact paragraphs matching the prompt and presents them to the model, instructing the model to *only* write answers using the provided passages and cite the sources.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              RAG prevents AI hallucinations by retrieving exact passages from your private vector index before sending the user's query to the LLM. The system instructs the model to generate its response using only this retrieved context, ensuring fact-based outputs with clear citation roots.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-r2">
+        <div class="faq-row" id="faq-r2" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-r2')">
-            <h3 class="faq-question">What vector database should my business use?</h3>
+            <h3 class="faq-question" itemprop="name">What vector database should my business use?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              It depends on your infrastructure. For zero-overhead cloud deployments, Pinecone is excellent. For open-source, self-hosted deployments with rich object queries, Weaviate is a stellar choice. If you are already running standard SQL databases, integrating pgvector into your existing PostgreSQL server is often the most cost-effective and secure path.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              The best vector database depends on your scaling needs: Pinecone is ideal for low-overhead serverless cloud deployments, Weaviate is excellent for self-hosted hybrid search, and pgvector is the most cost-effective option for extending an existing PostgreSQL database. We select and configure the database matching your security and scale requirements.
             </div>
           </div>
         </div>
 
-        <div class="faq-row" id="faq-r3">
+        <div class="faq-row" id="faq-r3" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
           <div class="faq-row-header" onclick="toggleFAQ('faq-r3')">
-            <h3 class="faq-question">How does data privacy work with custom RAG setups?</h3>
+            <h3 class="faq-question" itemprop="name">How does data privacy work with custom RAG setups?</h3>
             <div class="faq-toggle">+</div>
           </div>
-          <div class="faq-body">
-            <div class="faq-answer">
-              We design RAG structures with strict metadata tagging. When a user queries the model, the system filters the vector search by the user's role ID (e.g., admin vs. general employee). This guarantees that sensitive corporate information (like executive salary grids or customer lists) is never retrieved or shown to unauthorized users.
+          <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div class="faq-answer" itemprop="text">
+              We enforce data privacy in custom RAG setups by applying metadata role filters to all vector query executions. When a user prompts the system, the retrieval step matches text chunks against their authorization level, ensuring sensitive company documents are only shown to allowed roles.
             </div>
           </div>
         </div>
