@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>n8n Expert India | Custom n8n Workflow Automation Services</title>
+<meta name="description" content="Professional n8n workflow automation services by Nil Patel, an n8n Expert based in India. Build reliable CRM, lead, WhatsApp, and API automations." />
+<link rel="canonical" href="https://nilpatel.snpsolutions.co.nz/n8n-automation" />
+
+<!-- ── KEYWORD & AI ROBOTS META ── -->
+<meta name="keywords" content="n8n Expert India, n8n Workflow Automation, Business Automation Services, n8n Developer, Zapier Alternative, Nil Patel" />
+<meta name="robots" content="index, follow" />
+
+<!-- ── GEO-TARGETING METADATA ── -->
+<meta name="geo.region" content="IN-GJ" />
+<meta name="geo.placename" content="Vadodara, Gujarat, India" />
+
+<!-- ── OPEN GRAPH ── -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="n8n Expert India | Custom n8n Automation Services" />
+<meta property="og:description" content="Custom n8n workflow integrations and self-hosted node pipelines by Nil Patel. Replace Zapier, save on API costs, automate leads and CRM." />
+<meta property="og:url" content="https://nilpatel.snpsolutions.co.nz/n8n-automation" />
+<meta property="og:image" content="https://nilpatel.snpsolutions.co.nz/headshot.jpg" />
+
+<!-- ── GOOGLE RICH PROFILE & SERVICE SCHEMAS (JSON-LD) ── -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "n8n Workflow Automation Services",
+    "provider": {
+      "@type": "Person",
+      "name": "Nil Patel",
+      "jobTitle": "AI Developer & Full-Stack Engineer",
+      "url": "https://nilpatel.snpsolutions.co.nz"
+    },
+    "description": "Professional deployment, custom hosting, webhook mapping, and API integration using n8n workflow engines to replace expensive SaaS tools like Zapier.",
+    "areaServed": ["IN", "NZ", "AU"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "description": "Self-hosted n8n instances and optimized business process flow charts."
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can n8n replace Zapier?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. n8n serves as a powerful replacement for Zapier. It provides visual node editor features, supports inline JavaScript/Python, can be self-hosted on local servers with zero per-run execution fees, and offers a massive library of native integrations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a typical n8n automation project cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Basic workflow triggers and CRM mappings cost between $500 and $1,500. Advanced configurations involving multi-step data parsing, custom code nodes, and LLM agent linkages range from $2,000 to $3,500."
+        }
+      }
+    ]
+  }
+]
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Cabinet+Grotesk:wght@400;500;600;700;800&family=Departure+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- READ PROGRESS BAR -->
+<div id="read-progress"></div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="ai-agents.html">AI Agents</a>
+  <a href="n8n-automation.html">n8n Automation</a>
+  <a href="rag-development.html">RAG Development</a>
+  <a href="ai-chatbots.html">AI Chatbots</a>
+  <a href="ai-search-visibility.html">AI Search</a>
+  <a href="faq.html">FAQ</a>
+  <a href="knowledge-hub.html">Knowledge Hub</a>
+</div>
+
+<!-- ═══════════════════════════════════════ NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        Nil Patel<div class="nav-logo-dot"></div>
+      </a>
+                  <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai-agents.html">AI Agents</a></li>
+        <li><a href="n8n-automation.html" class="active">n8n</a></li>
+        <li><a href="rag-development.html">RAG</a></li>
+        <li><a href="ai-chatbots.html">Chatbots</a></li>
+        <li><a href="ai-search-visibility.html">AI Search</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="knowledge-hub.html">Hub</a></li>
+      </ul>
+      <button class="nav-ham" id="nav-ham" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO -->
+<section class="hero" style="padding: 10rem 0 5rem 0;">
+  <div class="hero-blob"></div>
+  <div class="hero-blob-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left Column: Content -->
+      <div class="hero-content">
+        <p class="section-kicker" data-reveal data-delay="1">Specialized Service</p>
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; margin-bottom: 1.5rem;" data-reveal data-delay="2">
+          Workflow <em>n8n Automation</em><br>Services
+        </h1>
+        <p class="section-sub" style="max-width: 600px; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;" data-reveal data-delay="3">
+          Replacing expensive subscription automation pipelines with optimized, self-hosted n8n workflow engines to connect CRM data, email systems, payment portals, and AI agents.
+        </p>
+        <div class="hero-actions" data-reveal data-delay="4" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn-accent magnetic">Book AI Strategy Call →</a>
+          <span class="tag-pill blue" style="align-self: center; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em; padding: 0.5rem 1rem;">Platform: Self-Hosted & Cloud n8n</span>
+        </div>
+      </div>
+
+      <!-- Right Column: n8n Workflow Visual -->
+      <div class="hero-visual">
+        <div class="hero-console" data-reveal data-delay="3">
+          <div class="console-header">
+            <div class="console-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="console-title mono">n8n_execution.json</div>
+            <div class="console-status">
+              <span class="status-indicator"></span>
+              <span class="status-text mono">SUCCESS</span>
+            </div>
+          </div>
+          <div class="console-body">
+            <div class="console-code mono" style="font-size: 0.7rem;">
+              <div class="code-line"><span class="code-prompt">n8n</span> Running webhook trigger node...</div>
+              <div class="code-line info">> Received: Stripe checkout session payload [ID: 994]</div>
+              <div class="code-line info">> Executing Router: Check subscription type...</div>
+              <div class="code-line success">✓ Plan matches "Enterprise SaaS". Routing...</div>
+              <div class="code-line info">> Executing Node: Create Salesforce Lead Profile</div>
+              <div class="code-line success">✓ DB updated. Active slack ping dispatched.</div>
+            </div>
+            <div class="console-viz">
+              <div class="viz-node active-pulse">
+                <span class="viz-icon">💳</span>
+                <span class="viz-label mono">Stripe</span>
+              </div>
+              <div class="viz-connector"><div class="connector-pulse"></div></div>
+              <div class="viz-node active-pulse">
+                <span class="viz-icon">⚙️</span>
+                <span class="viz-label mono">n8n Engine</span>
+              </div>
+              <div class="viz-connector"><div class="connector-pulse"></div></div>
+              <div class="viz-node">
+                <span class="viz-icon">📈</span>
+                <span class="viz-label mono">Salesforce</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ INFINITE MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Workflows <span class="marquee-sep">✦</span>
+      Self-Hosted n8n <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/stripe/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Stripe Webhooks <span class="marquee-sep">✦</span>
+      CRM Integrations <span class="marquee-sep">✦</span> ERP Syncing <span class="marquee-sep">✦</span> Custom API Handlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> PostgreSQL Sync <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/docker/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Docker Hardening <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/nodedotjs/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Node.js Scripts
+    </span>
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Workflows <span class="marquee-sep">✦</span>
+      Self-Hosted n8n <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/stripe/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Stripe Webhooks <span class="marquee-sep">✦</span>
+      CRM Integrations <span class="marquee-sep">✦</span> ERP Syncing <span class="marquee-sep">✦</span> Custom API Handlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> PostgreSQL Sync <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/docker/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Docker Hardening <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/nodedotjs/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Node.js Scripts
+    </span>
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Workflows <span class="marquee-sep">✦</span>
+      Self-Hosted n8n <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/stripe/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Stripe Webhooks <span class="marquee-sep">✦</span>
+      CRM Integrations <span class="marquee-sep">✦</span> ERP Syncing <span class="marquee-sep">✦</span> Custom API Handlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> PostgreSQL Sync <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/docker/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Docker Hardening <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/nodedotjs/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Node.js Scripts
+    </span>
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Workflows <span class="marquee-sep">✦</span>
+      Self-Hosted n8n <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/stripe/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Stripe Webhooks <span class="marquee-sep">✦</span>
+      CRM Integrations <span class="marquee-sep">✦</span> ERP Syncing <span class="marquee-sep">✦</span> Custom API Handlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> PostgreSQL Sync <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/docker/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Docker Hardening <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/nodedotjs/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Node.js Scripts
+    </span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ MAIN BENTO DETAILS -->
+<section style="padding: 6rem 0; background: var(--surface-2); border-bottom: 1px solid var(--border-md);">
+  <div class="container">
+    <div class="services-bento" style="margin-bottom: var(--section-gap);">
+      
+      <!-- Card 1: What is n8n? -->
+      <div class="svc-card" style="grid-column: 1 / 4;" data-reveal>
+        <div class="svc-icon">🔌</div>
+        <h3 class="svc-title">What is n8n Workflow Automation?</h3>
+        <p class="svc-desc">n8n is a flexible workflow automation tool that enables us to design visual pipelines rapidly. We accelerate boilerplate nodes with AI, while Nil personally builds and secures the custom JavaScript nodes, API handshake headers, persistent database credentials, and error-catching retry states.</p>
+      </div>
+
+      <!-- Card 2: n8n vs Zapier -->
+      <div class="svc-card" style="grid-column: 4 / 7;" data-reveal data-delay="1">
+        <div class="svc-icon">⚔️</div>
+        <h3 class="svc-title">Why n8n Beats Zapier</h3>
+        <p class="svc-desc">Zapier restricts you to static triggers, enforces severe monthly execution fees, and gates premium modules. n8n is open, allowing nested loops, complex conditional splits, and JavaScript transformations on raw payloads. Best of all, it can be self-hosted securely on virtual private servers (VPS).</p>
+      </div>
+
+      <!-- Card 3: Automation Pillars -->
+      <div class="svc-card" style="grid-column: 1 / 3;" data-reveal>
+        <div class="svc-icon">⚙️</div>
+        <h3 class="svc-title">Core Automations</h3>
+        <ul class="svc-list">
+          <li><strong>CRM Automation</strong>: Hubspot, Salesforce</li>
+          <li><strong>Lead Enrichment</strong>: Gemini scraper feeds</li>
+          <li><strong>WhatsApp Automation</strong>: Twilio, Cloud API</li>
+          <li><strong>Email Pipelines</strong>: Outlook, Resend</li>
+        </ul>
+      </div>
+
+      <!-- Card 4: Costs & ROI -->
+      <div class="svc-card" style="grid-column: 3 / 5;" data-reveal data-delay="1">
+        <div class="svc-icon">💸</div>
+        <h3 class="svc-title">Cost & Pricing</h3>
+        <p class="svc-desc">Custom n8n flows range from <strong>$500 to $2,500</strong>. By migrating away from Zapier or Make, our clients save an average of <strong>$150 - $600 per month</strong> in subscription overhead, paying for their setup costs within months.</p>
+      </div>
+
+      <!-- Card 5: Automation Stack -->
+      <div class="svc-card" style="grid-column: 5 / 7;" data-reveal data-delay="2">
+        <div class="svc-icon">🛠️</div>
+        <h3 class="svc-title">Our Technical Stack</h3>
+        <p class="svc-desc">Deploying self-hosted Docker containers on GCP, PostgreSQL backends, and raw JavaScript transformations, backed by Nil's custom server hardening, access control firewalls, and query optimization.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FAQS -->
+<section style="padding: 6rem 0; background: var(--page-bg);">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto 3rem auto;" data-reveal>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">n8n <em>FAQs</em></h2>
+      <div class="faq-list">
+        
+        <div class="faq-row" id="faq-n1">
+          <div class="faq-row-header" onclick="toggleFAQ('faq-n1')">
+            <h3 class="faq-question">Can n8n really replace Zapier for all my business workflows?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              Yes, in almost all scenarios. n8n supports thousands of direct app integrations. For any unsupported software, we configure native HTTP request nodes to communicate directly with their REST APIs. Additionally, n8n's capability to run custom JavaScript within any node makes it vastly more capable than Zapier for data cleanup and complex parsing tasks.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-row" id="faq-n2">
+          <div class="faq-row-header" onclick="toggleFAQ('faq-n2')">
+            <h3 class="faq-question">How does hosting a self-hosted n8n instance work?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              We deploy n8n in a containerized Docker setup on a secure, lightweight cloud server (such as GCP, DigitalOcean, or Railway) mapped to your subdomain. We set up SSL certificates, secure the instance behind administrative auth layers, configure automatic database backups, and connect webhook listeners.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-row" id="faq-n3">
+          <div class="faq-row-header" onclick="toggleFAQ('faq-n3')">
+            <h3 class="faq-question">Can you connect n8n workflows with AI models?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              Yes. n8n includes advanced Advanced AI nodes that support LangChain integrations. This allows us to hook up custom LLM providers (Google Gemini, OpenAI, Claude) and vector store search databases (Pinecone, ChromaDB) directly into visual workflow maps to build autonomous chat, email, or Slack daemons.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div data-reveal>
+      <p class="section-kicker">Get Started</p>
+      <h2 class="section-title">Hire an <em>n8n Expert</em></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <p class="contact-blurb">Looking to migrate workflows away from high-fee subscription platforms, or build custom automation endpoints? Let's discuss your requirements.</p>
+        <div class="contact-links">
+          <a href="mailto:nilpatel7530@gmail.com" class="contact-link-item magnetic">
+            <div class="cli-icon">✉</div>
+            <div>
+              <div class="cli-label">Email</div>
+              <div class="cli-value">nilpatel7530@gmail.com</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div data-reveal data-delay="1">
+        <form class="contact-form" id="contactForm" action="#" method="POST">
+          <div class="form-2col">
+            <div class="form-group">
+              <label class="form-label" for="fname">Name</label>
+              <input class="form-control" type="text" id="fname" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="femail">Email</label>
+              <input class="form-control" type="email" id="femail" placeholder="you@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fsubject">What are you automating?</label>
+            <input class="form-control" type="text" id="fsubject" placeholder="e.g., Lead sync, Shopify invoicing, CRM updates..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fmessage">Workflow Description</label>
+            <textarea class="form-control" id="fmessage" placeholder="Provide details on target tools, volume of workflows, or your current Zapier overhead..." required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-accent magnetic" id="submit-btn">Send Message →</button>
+            <span class="submit-note" id="submit-msg"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 <span>Nil Patel</span> · AI Developer · Vadodara</p>
+            <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="faq.html" class="footer-link">FAQs</a>
+        <a href="knowledge-hub.html" class="footer-link">Knowledge Hub</a>
+        <a href="ai-search-visibility.html" class="footer-link">AI Search</a>
+        <a href="mailto:nilpatel7530@gmail.com" class="footer-link">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════ SCRIPTS -->
+<script>
+// Custom Cursor
+const cursor = document.getElementById('cursor');
+const ring   = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top  = my + 'px';
+});
+
+function animateCursor() {
+  rx += (mx - rx) * 0.14;
+  ry += (my - ry) * 0.14;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+document.querySelectorAll('a, button, .faq-row, .magnetic').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-link'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-link'));
+});
+
+// Scroll Progress & Stuck Nav
+const progressBar = document.getElementById('read-progress');
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  const pct = (scrollY / (document.body.scrollHeight - innerHeight)) * 100;
+  progressBar.style.width = Math.min(pct, 100) + '%';
+  if (nav) nav.classList.toggle('stuck', scrollY > 60);
+}, { passive: true });
+
+// Mobile Nav
+const mobileNav = document.getElementById('mobile-nav');
+const hamBtn    = document.getElementById('nav-ham');
+let navOpen = false;
+hamBtn.addEventListener('click', () => {
+  navOpen = !navOpen;
+  mobileNav.classList.toggle('open', navOpen);
+  hamBtn.children[0].style.transform = navOpen ? 'rotate(45deg) translateY(6px)' : '';
+  hamBtn.children[1].style.opacity   = navOpen ? '0' : '1';
+  hamBtn.children[2].style.transform = navOpen ? 'rotate(-45deg) translateY(-6px)' : '';
+});
+
+// FAQ Accordion
+function toggleFAQ(id) {
+  const row = document.getElementById(id);
+  const isOpen = row.classList.contains('open');
+  document.querySelectorAll('.faq-row.open').forEach(r => r.classList.remove('open'));
+  if (!isOpen) row.classList.add('open');
+}
+
+// Scroll Reveal Observer
+const reveals = document.querySelectorAll('[data-reveal]');
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => revealObs.observe(el));
+
+// Magnetic Elements
+document.querySelectorAll('.magnetic').forEach(el => {
+  el.addEventListener('mousemove', e => {
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    el.style.transform = `translate(${x * 0.22}px, ${y * 0.22}px)`;
+  });
+  el.style.transition = 'transform 0.1s ease-out';
+  el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+});
+
+// Contact form: WhatsApp integration
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const WHATSAPP_NUMBER = '916355343580';
+  const btn = document.getElementById('submit-btn');
+  const msg = document.getElementById('submit-msg');
+  
+  const name = document.getElementById('fname').value;
+  const email = document.getElementById('femail').value;
+  const subject = document.getElementById('fsubject').value || 'Not specified';
+  const message = document.getElementById('fmessage').value;
+  
+  btn.textContent = 'Preparing WhatsApp...';
+  btn.disabled = true;
+  
+  setTimeout(() => {
+    btn.textContent = 'Opening WhatsApp...';
+    btn.style.background = '#22c55e';
+    msg.textContent = "Opening WhatsApp to send your message...";
+    
+    const formattedMessage = `Hello Nil! 👋\n\nI just filled out the contact form on your n8n Automation page:\n\n👤 *Name:* ${name}\n📧 *Email:* ${email}\n🔌 *Workflow request:* ${subject}\n💬 *Details:* ${message}`;
+    const encodedText = encodeURIComponent(formattedMessage);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodedText}`;
+    
+    this.reset();
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+      btn.textContent = 'Send Message →';
+      btn.disabled = false;
+      btn.style.background = '';
+      msg.textContent = 'Message prepared! Check the opened WhatsApp tab.';
+    }, 1000);
+  }, 1500);
+});
+</script>
+</body>
+</html>

@@ -6,11 +6,6 @@
 # Global Search Engine Crawling
 User-agent: *
 Allow: /
-Allow: /projects/
-Allow: /headshot.jpg
-Allow: /Nil_Patel_Resume.pdf
-Allow: /llms.txt
-Allow: /llms-full.txt
 Disallow: /tmp/
 Disallow: /vendor/
 

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Chatbot Developer | GPT Customer Support Chatbot Development Services</title>
+<meta name="description" content="Custom GPT-powered chatbot development services by Nil Patel, an AI Chatbot Developer. Automate customer support on your website and WhatsApp." />
+<link rel="canonical" href="https://nilpatel.snpsolutions.co.nz/ai-chatbots" />
+
+<!-- ── KEYWORD & AI ROBOTS META ── -->
+<meta name="keywords" content="AI Chatbot Developer, GPT Chatbot Development, Customer Support AI, WhatsApp Chatbots, Website Assistant, Nil Patel" />
+<meta name="robots" content="index, follow" />
+
+<!-- ── GEO-TARGETING METADATA ── -->
+<meta name="geo.region" content="IN-GJ" />
+<meta name="geo.placename" content="Vadodara, Gujarat, India" />
+
+<!-- ── OPEN GRAPH ── -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="AI Chatbot Developer | GPT Customer Support AI Services" />
+<meta property="og:description" content="Deploy custom GPT-powered chatbots for website support and WhatsApp. Automate queries, parse context, integrate APIs." />
+<meta property="og:url" content="https://nilpatel.snpsolutions.co.nz/ai-chatbots" />
+<meta property="og:image" content="https://nilpatel.snpsolutions.co.nz/headshot.jpg" />
+
+<!-- ── GOOGLE RICH PROFILE & SERVICE SCHEMAS (JSON-LD) ── -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Chatbot Development Services",
+    "provider": {
+      "@type": "Person",
+      "name": "Nil Patel",
+      "jobTitle": "AI Developer & Full-Stack Engineer",
+      "url": "https://nilpatel.snpsolutions.co.nz"
+    },
+    "description": "Designing and deploying GPT-powered conversational chatbot interfaces, WhatsApp Business API endpoints, and smart customer service helper widgets.",
+    "areaServed": ["IN", "NZ", "AU"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "description": "Custom customer support integration packages."
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an AI chatbot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An AI chatbot is a conversational software application powered by Large Language Models (LLMs) that can understand complex user prompts, parse context, query business databases, and respond in natural human dialogue."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to build a customer support AI chatbot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Building a custom business chatbot ranges from $1,000 for standard API interfaces up to $3,500 for fully integrated solutions containing custom databases, CRM linkages, and automated handoffs."
+        }
+      }
+    ]
+  }
+]
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Cabinet+Grotesk:wght@400;500;600;700;800&family=Departure+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- READ PROGRESS BAR -->
+<div id="read-progress"></div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="ai-agents.html">AI Agents</a>
+  <a href="n8n-automation.html">n8n Automation</a>
+  <a href="rag-development.html">RAG Development</a>
+  <a href="ai-chatbots.html">AI Chatbots</a>
+  <a href="ai-search-visibility.html">AI Search</a>
+  <a href="faq.html">FAQ</a>
+  <a href="knowledge-hub.html">Knowledge Hub</a>
+</div>
+
+<!-- ═══════════════════════════════════════ NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        Nil Patel<div class="nav-logo-dot"></div>
+      </a>
+                  <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai-agents.html">AI Agents</a></li>
+        <li><a href="n8n-automation.html" id="navlink-n8n">n8n</a></li>
+        <li><a href="rag-development.html">RAG</a></li>
+        <li><a href="ai-chatbots.html" class="active">Chatbots</a></li>
+        <li><a href="ai-search-visibility.html">AI Search</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="knowledge-hub.html">Hub</a></li>
+      </ul>
+      <button class="nav-ham" id="nav-ham" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO -->
+<section class="hero" style="padding: 10rem 0 5rem 0;">
+  <div class="hero-blob"></div>
+  <div class="hero-blob-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left Column: Content -->
+      <div class="hero-content">
+        <p class="section-kicker" data-reveal data-delay="1">Specialized Service</p>
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; margin-bottom: 1.5rem;" data-reveal data-delay="2">
+          Conversational <em>AI Chatbot</em><br>Development
+        </h1>
+        <p class="section-sub" style="max-width: 600px; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;" data-reveal data-delay="3">
+          Designing and launching responsive GPT-powered chatbots for your website, web app, or WhatsApp channels. Automate support, route queries, and capture warm leads 24/7.
+        </p>
+        <div class="hero-actions" data-reveal data-delay="4" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn-accent magnetic">Book AI Strategy Call →</a>
+          <span class="tag-pill blue" style="align-self: center; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em; padding: 0.5rem 1rem;">Channels: Web, WhatsApp, Slack</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Live Chat Console -->
+      <div class="hero-visual">
+        <div class="hero-console" data-reveal data-delay="3" style="height: 310px;">
+          <div class="console-header">
+            <div class="console-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="console-title mono">chatbot_ui.html</div>
+            <div class="console-status">
+              <span class="status-indicator"></span>
+              <span class="status-text mono">ONLINE</span>
+            </div>
+          </div>
+          <div class="console-body" style="padding: 1rem; justify-content: flex-start; gap: 0.75rem;">
+            <!-- Message bubbles -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.72rem; line-height: 1.4; width: 100%;">
+              <div style="align-self: flex-end; background: var(--accent); color: #fff; padding: 0.5rem 0.75rem; border-radius: 12px 12px 0 12px; max-width: 80%;">
+                Can you check my order status #1048?
+              </div>
+              <div style="align-self: flex-start; background: var(--surface-2); color: var(--ink); padding: 0.5rem 0.75rem; border-radius: 12px 12px 12px 0; max-width: 80%; border: 1px solid var(--border-md);">
+                🤖 Checking DB order index... Found order #1048. Shipped via DHL, ETA Friday.
+              </div>
+              <div style="align-self: flex-end; background: var(--accent); color: #fff; padding: 0.5rem 0.75rem; border-radius: 12px 12px 0 12px; max-width: 80%;">
+                Awesome, thank you!
+              </div>
+            </div>
+            <div class="console-viz" style="margin-top: auto; padding: 0.5rem 0;">
+              <div class="viz-node active-pulse">
+                <span class="viz-icon">💬</span>
+                <span class="viz-label mono">User</span>
+              </div>
+              <div class="viz-connector"><div class="connector-pulse"></div></div>
+              <div class="viz-node active-pulse">
+                <span class="viz-icon">⚡</span>
+                <span class="viz-label mono">Webhook</span>
+              </div>
+              <div class="viz-connector"><div class="connector-pulse"></div></div>
+              <div class="viz-node">
+                <span class="viz-icon">📦</span>
+                <span class="viz-label mono">Logistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ INFINITE MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/openai/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Custom GPTs <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/whatsapp/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> WhatsApp Chatbots <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/slack/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Slack Agents <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/socketdotio/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Socket.io Backends <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/huggingface/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Hugging Face <span class="marquee-sep">✦</span>
+      Voice Synthesis <span class="marquee-sep">✦</span> Context Retention <span class="marquee-sep">✦</span> Lead Capture <span class="marquee-sep">✦</span> Support Automation
+    </span>
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/openai/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Custom GPTs <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/whatsapp/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> WhatsApp Chatbots <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/slack/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Slack Agents <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/socketdotio/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Socket.io Backends <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/huggingface/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Hugging Face <span class="marquee-sep">✦</span>
+      Voice Synthesis <span class="marquee-sep">✦</span> Context Retention <span class="marquee-sep">✦</span> Lead Capture <span class="marquee-sep">✦</span> Support Automation
+    </span>
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/openai/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Custom GPTs <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/whatsapp/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> WhatsApp Chatbots <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/slack/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Slack Agents <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/socketdotio/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Socket.io Backends <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/huggingface/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Hugging Face <span class="marquee-sep">✦</span>
+      Voice Synthesis <span class="marquee-sep">✦</span> Context Retention <span class="marquee-sep">✦</span> Lead Capture <span class="marquee-sep">✦</span> Support Automation
+    </span>
+    <span class="marquee-item">
+      <img src="https://cdn.simpleicons.org/openai/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Custom GPTs <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/whatsapp/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> WhatsApp Chatbots <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/slack/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Slack Agents <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/socketdotio/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Socket.io Backends <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/huggingface/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Hugging Face <span class="marquee-sep">✦</span>
+      Voice Synthesis <span class="marquee-sep">✦</span> Context Retention <span class="marquee-sep">✦</span> Lead Capture <span class="marquee-sep">✦</span> Support Automation
+    </span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ MAIN BENTO DETAILS -->
+<section style="padding: 6rem 0; background: var(--surface-2); border-bottom: 1px solid var(--border-md);">
+  <div class="container">
+    <div class="services-bento" style="margin-bottom: var(--section-gap);">
+      
+      <!-- Card 1: What is an AI Chatbot? -->
+      <div class="svc-card" style="grid-column: 1 / 4;" data-reveal>
+        <div class="svc-icon">💬</div>
+        <h3 class="svc-title">What is an AI Chatbot?</h3>
+        <p class="svc-desc">Unlike outdated chatbots that operate strictly on static IF/THEN rules, modern AI Chatbots utilize advanced semantic models. They parse user intentions, handle grammar variations, adapt tone to context, query knowledge bases in real-time, and transfer conversations to live humans when needed.</p>
+      </div>
+
+      <!-- Card 2: Business Benefits -->
+      <div class="svc-card" style="grid-column: 4 / 7;" data-reveal data-delay="1">
+        <div class="svc-icon">📈</div>
+        <h3 class="svc-title">Core Benefits</h3>
+        <p class="svc-desc">Providing instant support response times reduces customer churn and automates up to 70% of ticketing hours. While AI manages conversational speed, Nil personally engineers the backend database logging, secure API webhook checks, CRM integration, and human support hand-off triggers.</p>
+      </div>
+
+      <!-- Card 3: Formats -->
+      <div class="svc-card" style="grid-column: 1 / 3;" data-reveal>
+        <div class="svc-icon">📱</div>
+        <h3 class="svc-title">Supported Formats</h3>
+        <ul class="svc-list">
+          <li>Embedded Website Assistants</li>
+          <li>WhatsApp Business API Bots</li>
+          <li>Slack &amp; Discord Support Daemons</li>
+          <li>Facebook Messenger Integrations</li>
+        </ul>
+      </div>
+
+      <!-- Card 4: Cost of Chatbots -->
+      <div class="svc-card" style="grid-column: 3 / 5;" data-reveal data-delay="1">
+        <div class="svc-icon">💰</div>
+        <h3 class="svc-title">Development Pricing</h3>
+        <p class="svc-desc">Custom business chatbot integrations range from <strong>$1,000 to $3,500</strong>. This includes custom branding, guardrails design, system prompts tuning, and dashboard reporting portals.</p>
+      </div>
+
+      <!-- Card 5: Technology Stack -->
+      <div class="svc-card" style="grid-column: 5 / 7;" data-reveal data-delay="2">
+        <div class="svc-icon">⚙️</div>
+        <h3 class="svc-title">Our Technical Stack</h3>
+        <p class="svc-desc">Leveraging GPT-4o and Google Gemini APIs alongside custom-built Node.js socket backends, secure database routing, and WhatsApp Cloud API integrations configured manually for high-volume enterprise traffic.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FAQS -->
+<section style="padding: 6rem 0; background: var(--page-bg);">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto 3rem auto;" data-reveal>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">AI Chatbot <em>FAQs</em></h2>
+      <div class="faq-list">
+        
+        <div class="faq-row" id="faq-c1">
+          <div class="faq-row-header" onclick="toggleFAQ('faq-c1')">
+            <h3 class="faq-question">What LLM APIs do you recommend for business chatbots?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              For general conversational speed and low cost, we recommend Google Gemini 3.5 Flash or OpenAI GPT-4o-mini. For highly complex reasoning and technical support domains, GPT-4o or Claude 3.5 Sonnet are excellent options. We structure prompt templates to select the most cost-effective model depending on query complexity.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-row" id="faq-c2">
+          <div class="faq-row-header" onclick="toggleFAQ('faq-c2')">
+            <h3 class="faq-question">Can the chatbot collect user contact info and push it to my CRM?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              Yes. We program custom function calling triggers. When a user expresses interest or requests pricing, the chatbot gathers their name, email, and description, structures it into a clean JSON format, and calls a webhook to push it directly to Hubspot, Zoho, or your custom Laravel dashboard database.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-row" id="faq-c3">
+          <div class="faq-row-header" onclick="toggleFAQ('faq-c3')">
+            <h3 class="faq-question">How does human handoff work?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              If the chatbot fails to answer a query within two turns, or if a user specifically requests a human agent, the chatbot triggers a handoff event. It sends a WhatsApp notification or email alert to your team containing the full conversation history, allowing a human rep to step in immediately.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div data-reveal>
+      <p class="section-kicker">Get Started</p>
+      <h2 class="section-title">Hire a <em>Chatbot Developer</em></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <p class="contact-blurb">Looking to add a responsive AI assistant to your website or launch a WhatsApp customer helper? Reach out to plan your conversational chatbot.</p>
+        <div class="contact-links">
+          <a href="mailto:nilpatel7530@gmail.com" class="contact-link-item magnetic">
+            <div class="cli-icon">✉</div>
+            <div>
+              <div class="cli-label">Email</div>
+              <div class="cli-value">nilpatel7530@gmail.com</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div data-reveal data-delay="1">
+        <form class="contact-form" id="contactForm" action="#" method="POST">
+          <div class="form-2col">
+            <div class="form-group">
+              <label class="form-label" for="fname">Name</label>
+              <input class="form-control" type="text" id="fname" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="femail">Email</label>
+              <input class="form-control" type="email" id="femail" placeholder="you@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fsubject">Where are we hosting the chatbot?</label>
+            <input class="form-control" type="text" id="fsubject" placeholder="e.g., Website widget, WhatsApp, Slack..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fmessage">Chatbot Requirements</label>
+            <textarea class="form-control" id="fmessage" placeholder="Provide details on target capabilities, CRM linkages, or tone parameters..." required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-accent magnetic" id="submit-btn">Send Message →</button>
+            <span class="submit-note" id="submit-msg"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 <span>Nil Patel</span> · AI Developer · Vadodara</p>
+            <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="faq.html" class="footer-link">FAQs</a>
+        <a href="knowledge-hub.html" class="footer-link">Knowledge Hub</a>
+        <a href="ai-search-visibility.html" class="footer-link">AI Search</a>
+        <a href="mailto:nilpatel7530@gmail.com" class="footer-link">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════ SCRIPTS -->
+<script>
+// Custom Cursor
+const cursor = document.getElementById('cursor');
+const ring   = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top  = my + 'px';
+});
+
+function animateCursor() {
+  rx += (mx - rx) * 0.14;
+  ry += (my - ry) * 0.14;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+document.querySelectorAll('a, button, .faq-row, .magnetic').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-link'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-link'));
+});
+
+// Scroll Progress & Stuck Nav
+const progressBar = document.getElementById('read-progress');
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  const pct = (scrollY / (document.body.scrollHeight - innerHeight)) * 100;
+  progressBar.style.width = Math.min(pct, 100) + '%';
+  if (nav) nav.classList.toggle('stuck', scrollY > 60);
+}, { passive: true });
+
+// Mobile Nav
+const mobileNav = document.getElementById('mobile-nav');
+const hamBtn    = document.getElementById('nav-ham');
+let navOpen = false;
+hamBtn.addEventListener('click', () => {
+  navOpen = !navOpen;
+  mobileNav.classList.toggle('open', navOpen);
+  hamBtn.children[0].style.transform = navOpen ? 'rotate(45deg) translateY(6px)' : '';
+  hamBtn.children[1].style.opacity   = navOpen ? '0' : '1';
+  hamBtn.children[2].style.transform = navOpen ? 'rotate(-45deg) translateY(-6px)' : '';
+});
+
+// FAQ Accordion
+function toggleFAQ(id) {
+  const row = document.getElementById(id);
+  const isOpen = row.classList.contains('open');
+  document.querySelectorAll('.faq-row.open').forEach(r => r.classList.remove('open'));
+  if (!isOpen) row.classList.add('open');
+}
+
+// Scroll Reveal Observer
+const reveals = document.querySelectorAll('[data-reveal]');
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => revealObs.observe(el));
+
+// Magnetic Elements
+document.querySelectorAll('.magnetic').forEach(el => {
+  el.addEventListener('mousemove', e => {
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    el.style.transform = `translate(${x * 0.22}px, ${y * 0.22}px)`;
+  });
+  el.style.transition = 'transform 0.1s ease-out';
+  el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+});
+
+// Contact form: WhatsApp integration
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const WHATSAPP_NUMBER = '916355343580';
+  const btn = document.getElementById('submit-btn');
+  const msg = document.getElementById('submit-msg');
+  
+  const name = document.getElementById('fname').value;
+  const email = document.getElementById('femail').value;
+  const subject = document.getElementById('fsubject').value || 'Not specified';
+  const message = document.getElementById('fmessage').value;
+  
+  btn.textContent = 'Preparing WhatsApp...';
+  btn.disabled = true;
+  
+  setTimeout(() => {
+    btn.textContent = 'Opening WhatsApp...';
+    btn.style.background = '#22c55e';
+    msg.textContent = "Opening WhatsApp to send your message...";
+    
+    const formattedMessage = `Hello Nil! 👋\n\nI just filled out the contact form on your AI Chatbots page:\n\n👤 *Name:* ${name}\n📧 *Email:* ${email}\n💬 *Chatbot request:* ${subject}\n💬 *Details:* ${message}`;
+    const encodedText = encodeURIComponent(formattedMessage);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodedText}`;
+    
+    this.reset();
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+      btn.textContent = 'Send Message →';
+      btn.disabled = false;
+      btn.style.background = '';
+      msg.textContent = 'Message prepared! Check the opened WhatsApp tab.';
+    }, 1000);
+  }, 1500);
+});
+</script>
+</body>
+</html>

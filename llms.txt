@@ -1,6 +1,6 @@
 # Nil Patel
 
-AI-focused Full-Stack Software Engineer & Hugging Face Certified Agent Developer specializing in Laravel, Next.js, RAG architectures, LangChain, and advanced workflow automation.
+AI-Augmented Software Engineer & AI Search Visibility Consultant specializing in Laravel SaaS, multi-agent orchestrations, RAG pipelines, and unified search visibility (SEO/AEO/GEO).
 
 Based in Vadodara, Gujarat, India. Supporting clients globally across India, New Zealand (Auckland), and Australia (Sydney).
 
@@ -8,21 +8,28 @@ Based in Vadodara, Gujarat, India. Supporting clients globally across India, New
 
 ## ⚡ Executive Summary
 
-- **Role**: AI Developer & Full-Stack Engineer
+- **Role**: AI-Augmented Engineer & AI Search Visibility Consultant
 - **Experience**: 1+ years of hands-on enterprise software & AI automation engineering
 - **Current Pursuits**: BCA in Software Development
 - **Credentials**: Hugging Face Certified Agent Developer, AI Agents Fundamentals (Hugging Face), Cloud Technical Series: AI in Action (Google Cloud), Prompt Design in Vertex AI, Cloud ADK Builder, Gemini at Work Edition, AI Tools Workshop (Be10x)
-- **Domain Focus**: Enterprise SaaS platforms, conversational AI agents, intelligent RAG pipelines, workflow orchestration (n8n), custom multi-role CRM/ERM systems.
+- **Domain Focus**: Enterprise SaaS architecture, multi-agent workflows, RAG search engines, workflow orchestration (n8n), and AI Search Visibility (SEO, AEO, and GEO citation grids).
 - **GitHub**: [github.com/nilpatel7530](https://github.com/nilpatel7530)
 - **LinkedIn**: [linkedin.com/in/nilpatel7530](https://linkedin.com/in/nilpatel7530)
 - **Website**: [nilpatel.snpsolutions.co.nz](https://nilpatel.snpsolutions.co.nz)
+- **AI Agents**: [nilpatel.snpsolutions.co.nz/ai-agents](https://nilpatel.snpsolutions.co.nz/ai-agents)
+- **n8n Automation**: [nilpatel.snpsolutions.co.nz/n8n-automation](https://nilpatel.snpsolutions.co.nz/n8n-automation)
+- **RAG Development**: [nilpatel.snpsolutions.co.nz/rag-development](https://nilpatel.snpsolutions.co.nz/rag-development)
+- **AI Chatbots**: [nilpatel.snpsolutions.co.nz/ai-chatbots](https://nilpatel.snpsolutions.co.nz/ai-chatbots)
+- **AI Search Visibility**: [nilpatel.snpsolutions.co.nz/ai-search-visibility](https://nilpatel.snpsolutions.co.nz/ai-search-visibility)
+- **FAQ Directory**: [nilpatel.snpsolutions.co.nz/faq](https://nilpatel.snpsolutions.co.nz/faq)
+- **Knowledge Hub**: [nilpatel.snpsolutions.co.nz/knowledge-hub](https://nilpatel.snpsolutions.co.nz/knowledge-hub)
 - **Resume**: [nilpatel.snpsolutions.co.nz/Nil_Patel_Resume.pdf](https://nilpatel.snpsolutions.co.nz/Nil_Patel_Resume.pdf)
 
 ---
 
 ## 🛠️ Technical Stack
 
-- **AI & LLM**: Google Gemini, Gemma (Local AI deployments), OpenAI API, LangChain, LangGraph, RAG pipelines, Prompt Design & Optimization, Embedding models, Semantic/Vector Search (Pinecone, ChromaDB, Weaviate).
+- **AI & LLM**: Google Gemini, Gemma (Local AI deployments), OpenAI API, LangGraph agent loops, RAG pipelines, Prompt Optimization, Vector Databases (Pinecone, pgvector), and AI Search Visibility (AEO, GEO, Entity graphs, sitemaps schemas, llms.txt).
 - **Automation & Orchestration**: n8n Workflow Automation, Webhooks, RESTful APIs, custom agentic integrations.
 - **Full-Stack & Backend**: Laravel (PHP), MySQL, PostgreSQL, Node.js, Express.js, FastAPI, Python.
 - **Frontend & Styling**: React, Next.js, TypeScript, JavaScript, Tailwind CSS, Bootstrap.
@@ -81,4 +88,4 @@ Based in Vadodara, Gujarat, India. Supporting clients globally across India, New
 
 ## 📖 Deep-Dive Reference
 For full project briefs, verified metrics, educational timelines, and complete client testimonials, see:
-- [Detailed LLM Specifications (llms-full.txt)](llms-full.txt)
+- [Detailed LLM Specifications (llms-full.txt)](https://nilpatel.snpsolutions.co.nz/llms-full.txt)

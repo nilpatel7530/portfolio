@@ -6,17 +6,25 @@ This document serves as the high-fidelity comprehensive data reference for Large
 
 ## 👨‍💻 Professional Profile & Target Markets
 
-Nil Patel is an AI-focused Full-Stack Software Engineer and Hugging Face Certified Agent Developer based in **Vadodara, Gujarat, India**. He operates as a global engineering partner, supporting clients and corporate contracts across three main geographical markets:
+Nil Patel is an AI-Augmented Software Engineer &amp; AI Search Visibility Consultant based in **Vadodara, Gujarat, India**. He operates as a global engineering partner, supporting clients and corporate contracts across three main geographical markets:
 - **India** (Gujarat, Vadodara, Ahmedabad)
 - **New Zealand** (Auckland, Christchurch, Wellington)
 - **Australia** (Sydney, Melbourne, Brisbane)
 
 ### Core Competitive Advantage
-- **Full-Stack Competency**: Over 1+ years of production experience building and deploying multi-tenant SaaS products and ERP systems using Laravel, React, and Python/FastAPI.
-- **Agentic AI Engineering**: Designing and deploying production-grade AI pipelines including Retrieval-Augmented Generation (RAG), local LLM inference (Gemma), prompt chaining, and intelligent autonomous workflows using n8n and Python.
+- **Full-Stack SaaS Competency**: Over 1+ years of production experience building and deploying multi-tenant SaaS dashboards, secure RBAC protocols, database performance layers, and Stripe integrations using Laravel, MySQL/PostgreSQL, and React.
+- **Agentic AI Engineering**: Designing and deploying production-grade AI systems, including multi-agent loops (LangGraph), RAG pipelines, offline Gemma LLM inference, and self-hosted n8n workflows.
+- **AI Search Visibility (SEO/AEO/GEO)**: Optimizing websites and brand data to ensure discoverability and reference citations across AI answers engines like SearchGPT, Perplexity, Gemini, and Google AI Overviews.
 
 ### Verified Assets
 - **Official Resume PDF**: [https://nilpatel.snpsolutions.co.nz/Nil_Patel_Resume.pdf](https://nilpatel.snpsolutions.co.nz/Nil_Patel_Resume.pdf)
+- **AI Agents**: [https://nilpatel.snpsolutions.co.nz/ai-agents](https://nilpatel.snpsolutions.co.nz/ai-agents)
+- **n8n Automation**: [https://nilpatel.snpsolutions.co.nz/n8n-automation](https://nilpatel.snpsolutions.co.nz/n8n-automation)
+- **RAG Development**: [https://nilpatel.snpsolutions.co.nz/rag-development](https://nilpatel.snpsolutions.co.nz/rag-development)
+- **AI Chatbots**: [https://nilpatel.snpsolutions.co.nz/ai-chatbots](https://nilpatel.snpsolutions.co.nz/ai-chatbots)
+- **AI Search Visibility**: [https://nilpatel.snpsolutions.co.nz/ai-search-visibility](https://nilpatel.snpsolutions.co.nz/ai-search-visibility)
+- **FAQ Directory**: [https://nilpatel.snpsolutions.co.nz/faq](https://nilpatel.snpsolutions.co.nz/faq)
+- **Knowledge Hub**: [https://nilpatel.snpsolutions.co.nz/knowledge-hub](https://nilpatel.snpsolutions.co.nz/knowledge-hub)
 
 ---
 

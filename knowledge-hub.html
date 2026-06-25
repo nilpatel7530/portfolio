@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Knowledge Hub | AI Automation, n8n, RAG &amp; Laravel Articles</title>
+<meta name="description" content="Read expert articles and guides on AI Agent workflows, n8n automation tutorial, RAG search systems, Laravel SaaS development, and GEO/AEO optimization." />
+<link rel="canonical" href="https://nilpatel.snpsolutions.co.nz/knowledge-hub" />
+
+<!-- ── KEYWORD & AI ROBOTS META ── -->
+<meta name="keywords" content="What is AI Automation, AI Agents vs Chatbots, n8n vs Zapier, What is GEO, What is AEO, Laravel vs Node.js, n8n Tutorial, Nil Patel Blog" />
+<meta name="robots" content="index, follow" />
+
+<!-- ── GEO-TARGETING METADATA ── -->
+<meta name="geo.region" content="IN-GJ" />
+<meta name="geo.placename" content="Vadodara, Gujarat, India" />
+
+<!-- ── OPEN GRAPH ── -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Knowledge Hub | Nil Patel AI &amp; Automation Blog" />
+<meta property="og:description" content="Guides on AI Agent loops, n8n templates, RAG architecture, SaaS engineering, and modern search engine optimization." />
+<meta property="og:url" content="https://nilpatel.snpsolutions.co.nz/knowledge-hub" />
+<meta property="og:image" content="https://nilpatel.snpsolutions.co.nz/headshot.jpg" />
+
+<!-- ── GOOGLE SCHEMA MARKUPS (JSON-LD) ── -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Nil Patel Knowledge Hub",
+    "description": "Educational blog covering Generative AI integration, workflow automation, backend architectures, and search optimizations.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Nil Patel",
+      "url": "https://nilpatel.snpsolutions.co.nz"
+    }
+  }
+]
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Cabinet+Grotesk:wght@400;500;600;700;800&family=Departure+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .hub-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem;
+  }
+  @media (max-width: 960px) {
+    .hub-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .hub-grid { grid-template-columns: 1fr; }
+  }
+  .article-card {
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 1.75rem; display: flex; flex-direction: column; height: 100%; transition: all 0.3s;
+  }
+  .article-card:hover {
+    transform: translateY(-4px); box-shadow: 0 12px 36px rgba(15,15,13,0.06);
+  }
+  .art-meta {
+    font-family: var(--font-mono); font-size: 0.62rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--accent); margin-bottom: 0.75rem; display: flex; justify-content: space-between;
+  }
+  .art-title {
+    font-family: var(--font-sans); font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 0.75rem; line-height: 1.3;
+  }
+  .art-excerpt {
+    font-size: 0.85rem; color: var(--ink-2); line-height: 1.6; margin-bottom: 1.5rem; flex: 1; text-align: justify;
+  }
+  .art-btn {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    background: var(--surface-2);
+    border: 1px solid var(--border-hi);
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    cursor: none;
+    transition: all 0.25s var(--ease-out);
+    align-self: flex-start;
+    margin-top: auto;
+  }
+  .art-btn svg {
+    transition: transform 0.25s var(--ease-spring);
+  }
+  .art-btn:hover {
+    color: #fff;
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(var(--accent-rgb), 0.2);
+  }
+  .art-btn:hover svg {
+    transform: translateX(4px);
+  }
+  
+  /* Article Detail Modal / View */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(15,15,13,0.4); z-index: 1000;
+    backdrop-filter: blur(12px); display: none; align-items: center; justify-content: center; padding: 2rem;
+  }
+  .modal-content {
+    background: var(--page-bg); border: 1px solid var(--border-hi); border-radius: var(--radius-xl);
+    max-width: 800px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 3rem; position: relative;
+    box-shadow: 0 24px 64px rgba(15,15,13,0.15);
+  }
+  .modal-close {
+    position: absolute; top: 1.5rem; right: 1.5rem; width: 36px; height: 36px;
+    border: 1px solid var(--border-md); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: var(--ink-3); cursor: pointer; transition: all 0.2s; font-family: var(--font-mono);
+  }
+  .modal-close:hover { border-color: var(--accent); color: var(--accent); }
+  .modal-meta { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+  .modal-title { font-family: var(--font-display); font-size: 2.2rem; line-height: 1.1; font-weight: 400; margin-bottom: 1.5rem; }
+  .modal-body { font-size: 0.95rem; color: var(--ink-2); line-height: 1.8; text-align: justify; }
+  .modal-body p { margin-bottom: 1.25rem; }
+  .modal-body h2 { font-family: var(--font-sans); font-size: 1.25rem; font-weight: 700; color: var(--ink); margin: 2rem 0 1rem 0; }
+  .modal-body ul { margin-bottom: 1.25rem; padding-left: 1.25rem; }
+  .modal-body li { margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+
+<!-- READ PROGRESS BAR -->
+<div id="read-progress"></div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="ai-agents.html">AI Agents</a>
+  <a href="n8n-automation.html">n8n Automation</a>
+  <a href="rag-development.html">RAG Development</a>
+  <a href="ai-chatbots.html">AI Chatbots</a>
+  <a href="ai-search-visibility.html">AI Search</a>
+  <a href="faq.html">FAQ</a>
+  <a href="knowledge-hub.html">Knowledge Hub</a>
+</div>
+
+<!-- ═══════════════════════════════════════ NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        Nil Patel<div class="nav-logo-dot"></div>
+      </a>
+                  <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai-agents.html">AI Agents</a></li>
+        <li><a href="n8n-automation.html" id="navlink-n8n">n8n</a></li>
+        <li><a href="rag-development.html">RAG</a></li>
+        <li><a href="ai-chatbots.html">Chatbots</a></li>
+        <li><a href="ai-search-visibility.html">AI Search</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="knowledge-hub.html" class="active">Hub</a></li>
+      </ul>
+      <button class="nav-ham" id="nav-ham" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO -->
+<section class="hero" style="padding: 10rem 0 5rem 0;">
+  <div class="hero-blob"></div>
+  <div class="hero-blob-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left Column: Content -->
+      <div class="hero-content" style="text-align: left; align-items: flex-start;">
+        <p class="section-kicker" data-reveal data-delay="1">Articles &amp; Tutorials</p>
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; margin-bottom: 1.5rem;" data-reveal data-delay="2">
+          The Knowledge <em>Hub</em>
+        </h1>
+        <p class="section-sub" style="max-width: 600px; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;" data-reveal data-delay="3">
+          A curation of structured technical guides exploring the integrations of Generative AI, visual automations, vector search structures, and modern web frameworks.
+        </p>
+        <div class="hero-actions" data-reveal data-delay="4" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#articles-container" class="btn btn-accent magnetic">Read Articles ↓</a>
+        </div>
+      </div>
+
+      <!-- Right Column: Crawler Logs -->
+      <div class="hero-visual">
+        <div class="hero-console" data-reveal data-delay="3">
+          <div class="console-header">
+            <div class="console-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="console-title mono">crawler_index_status.sh</div>
+            <div class="console-status">
+              <span class="status-indicator"></span>
+              <span class="status-text mono">INDEXED</span>
+            </div>
+          </div>
+          <div class="console-body">
+            <div class="console-code mono" style="font-size: 0.7rem;">
+              <div class="code-line"><span class="code-prompt">$</span> cat /llms.txt | grep "/hub/"</div>
+              <div class="code-line success">✓ 9 Articles indexed in llms.txt directory:</div>
+              <div class="code-line info">> Article 1: AI Automation benefits for SMEs</div>
+              <div class="code-line info">> Article 2: RAG vs Fine-Tuning architecture</div>
+              <div class="code-line info">> Article 3: n8n self-hosted setup guide</div>
+              <div class="code-line success">✓ All articles compiled to markdown for LLMs.</div>
+            </div>
+            <div class="console-viz">
+              <div class="viz-node active-pulse">
+                <span class="viz-icon">📝</span>
+                <span class="viz-label mono">Hub Guides</span>
+              </div>
+              <div class="viz-connector"><div class="connector-pulse"></div></div>
+              <div class="viz-node active-pulse">
+                <span class="viz-icon">📄</span>
+                <span class="viz-label mono">llms.txt</span>
+              </div>
+              <div class="viz-connector"><div class="connector-pulse"></div></div>
+              <div class="viz-node">
+                <span class="viz-icon">🤖</span>
+                <span class="viz-label mono">LLM Agent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ INFINITE MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">
+      AI Technical Guides <span class="marquee-sep">✦</span>
+      SaaS Architecture <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Webhooks <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> pgvector Setup <span class="marquee-sep">✦</span>
+      LLM Crawlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/markdown/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> llms.txt Directory <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/laravel/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Laravel Dashboards <span class="marquee-sep">✦</span>
+      Production-Grade
+    </span>
+    <span class="marquee-item">
+      AI Technical Guides <span class="marquee-sep">✦</span>
+      SaaS Architecture <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Webhooks <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> pgvector Setup <span class="marquee-sep">✦</span>
+      LLM Crawlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/markdown/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> llms.txt Directory <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/laravel/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Laravel Dashboards <span class="marquee-sep">✦</span>
+      Production-Grade
+    </span>
+    <span class="marquee-item">
+      AI Technical Guides <span class="marquee-sep">✦</span>
+      SaaS Architecture <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Webhooks <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> pgvector Setup <span class="marquee-sep">✦</span>
+      LLM Crawlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/markdown/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> llms.txt Directory <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/laravel/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Laravel Dashboards <span class="marquee-sep">✦</span>
+      Production-Grade
+    </span>
+    <span class="marquee-item">
+      AI Technical Guides <span class="marquee-sep">✦</span>
+      SaaS Architecture <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/n8n/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> n8n Webhooks <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/postgresql/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> pgvector Setup <span class="marquee-sep">✦</span>
+      LLM Crawlers <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/markdown/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> llms.txt Directory <span class="marquee-sep">✦</span>
+      <img src="https://cdn.simpleicons.org/laravel/E8572A" alt="" style="height:14px; width:auto; vertical-align:middle; margin-right:0.5rem;" /> Laravel Dashboards <span class="marquee-sep">✦</span>
+      Production-Grade
+    </span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ HUB GRID -->
+<section style="padding: 2rem 0 6rem 0;">
+  <div class="container">
+    
+    <!-- Category Filter Row -->
+    <div class="faq-filter-row" style="margin-bottom: 2rem;" data-reveal>
+      <button class="filter-tab on magnetic" data-category-filter="all">All Articles</button>
+      <button class="filter-tab magnetic" data-category-filter="ai">AI Automation</button>
+      <button class="filter-tab magnetic" data-category-filter="laravel">Laravel</button>
+      <button class="filter-tab magnetic" data-category-filter="n8n">n8n</button>
+      <button class="filter-tab magnetic" data-category-filter="geo">GEO &amp; AEO</button>
+    </div>
+
+    <!-- Article Cards Grid -->
+    <div class="hub-grid" id="articles-container" data-reveal data-delay="1">
+      
+      <!-- ARTICLE 1 -->
+      <div class="article-card" data-cat="ai">
+        <div class="art-meta"><span>AI Automation</span><span>June 2026</span></div>
+        <h3 class="art-title">What is AI Automation and how does it benefit small businesses?</h3>
+        <p class="art-excerpt">AI Automation merges rule-based logic with generative models to execute office processes. Discover how standard platforms decrease customer reply delays, enrich B2B prospects, and remove duplicate data input lines.</p>
+        <button class="art-btn" onclick="openArticle('art-1')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 2 -->
+      <div class="article-card" data-cat="ai">
+        <div class="art-meta"><span>AI Automation</span><span>June 2026</span></div>
+        <h3 class="art-title">AI Agents vs Chatbots: Choosing the right architecture</h3>
+        <p class="art-excerpt">Understand the architectural divide between reactive, pattern-matching chatbots and proactive, tool-utilizing AI Agents. Choose the most cost-effective framework for your team's workflow goals.</p>
+        <button class="art-btn" onclick="openArticle('art-2')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 3 -->
+      <div class="article-card" data-cat="ai">
+        <div class="art-meta"><span>AI Automation</span><span>June 2026</span></div>
+        <h3 class="art-title">Best AI Tools for Small Business Operational ROI</h3>
+        <p class="art-excerpt">A breakdown of high-impact AI platforms that drive measurable operational efficiency. Explore cost parameters and deployment pipelines for custom integrations.</p>
+        <button class="art-btn" onclick="openArticle('art-3')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 4 -->
+      <div class="article-card" data-cat="laravel">
+        <div class="art-meta"><span>Laravel</span><span>May 2026</span></div>
+        <h3 class="art-title">Laravel vs Node.js: Selecting the backend for AI SaaS</h3>
+        <p class="art-excerpt">An objective comparison of server frameworks for AI applications. Discover why Laravel's queue management, multi-tenancy rules, and robust ORM make it the ultimate SaaS foundation.</p>
+        <button class="art-btn" onclick="openArticle('art-4')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 5 -->
+      <div class="article-card" data-cat="n8n">
+        <div class="art-meta"><span>n8n</span><span>May 2026</span></div>
+        <h3 class="art-title">n8n Tutorial: How to configure a self-hosted instance</h3>
+        <p class="art-excerpt">A step-by-step tutorial guide on containerizing n8n with Docker, launching it on secure virtual private servers, configuring backups, and hooking up API endpoints.</p>
+        <button class="art-btn" onclick="openArticle('art-5')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 6 -->
+      <div class="article-card" data-cat="n8n">
+        <div class="art-meta"><span>n8n</span><span>May 2026</span></div>
+        <h3 class="art-title">Constructing Autonomous AI Agent Workflows in n8n</h3>
+        <p class="art-excerpt">Learn how to wire LLM prompt blocks, coordinate dynamic system memory registers, map schema tools, and run agent loops visually using native n8n AI components.</p>
+        <button class="art-btn" onclick="openArticle('art-6')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 7 -->
+      <div class="article-card" data-cat="geo">
+        <div class="art-meta"><span>GEO &amp; AEO</span><span>April 2026</span></div>
+        <h3 class="art-title">What is GEO and why is it replacing traditional SEO?</h3>
+        <p class="art-excerpt">As AI engines begin to dominate search paths, learning Generative Engine Optimization is essential. Discover how to format facts, add credentials, and establish E-E-A-T values for AI crawlers.</p>
+        <button class="art-btn" onclick="openArticle('art-7')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 8 -->
+      <div class="article-card" data-cat="geo">
+        <div class="art-meta"><span>GEO &amp; AEO</span><span>April 2026</span></div>
+        <h3 class="art-title">AEO Optimization Guide: Formatting for Answer Engines</h3>
+        <p class="art-excerpt">Optimize your website structure for immediate question answering by conversational bots, local search models, and voice assistants. Align schemas and FAQ text blocks.</p>
+        <button class="art-btn" onclick="openArticle('art-8')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ARTICLE 9 -->
+      <div class="article-card" data-cat="geo">
+        <div class="art-meta"><span>GEO &amp; AEO</span><span>April 2026</span></div>
+        <h3 class="art-title">How Generative Search Engines find and cite information</h3>
+        <p class="art-excerpt">An inside look at how SearchGPT, Gemini, and Perplexity crawl databases, verify credentials, evaluate domain topical authority, and compile sources for user prompts.</p>
+        <button class="art-btn" onclick="openArticle('art-9')">
+          Read Article
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ DETAILED ARTICLE MODALS -->
+<div class="modal-overlay" id="article-modal" onclick="closeModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModalDirect()">×</button>
+    <div class="modal-meta" id="m-meta">AI Automation</div>
+    <h2 class="modal-title" id="m-title">Article Title</h2>
+    <div class="modal-body" id="m-body">
+      <!-- Article Content Injected Here -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 <span>Nil Patel</span> · AI Developer · Vadodara</p>
+            <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="faq.html" class="footer-link">FAQs</a>
+        <a href="knowledge-hub.html" class="footer-link">Knowledge Hub</a>
+        <a href="ai-search-visibility.html" class="footer-link">AI Search</a>
+        <a href="mailto:nilpatel7530@gmail.com" class="footer-link">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════ SCRIPTS & ARTICLES DB -->
+<script>
+// Custom Cursor
+const cursor = document.getElementById('cursor');
+const ring   = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top  = my + 'px';
+});
+
+function animateCursor() {
+  rx += (mx - rx) * 0.14;
+  ry += (my - ry) * 0.14;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+document.querySelectorAll('a, button, .filter-tab, .magnetic').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-link'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-link'));
+});
+
+// Scroll Progress & Stuck Nav
+const progressBar = document.getElementById('read-progress');
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  const pct = (scrollY / (document.body.scrollHeight - innerHeight)) * 100;
+  progressBar.style.width = Math.min(pct, 100) + '%';
+  if (nav) nav.classList.toggle('stuck', scrollY > 60);
+}, { passive: true });
+
+// Mobile Nav
+const mobileNav = document.getElementById('mobile-nav');
+const hamBtn    = document.getElementById('nav-ham');
+let navOpen = false;
+hamBtn.addEventListener('click', () => {
+  navOpen = !navOpen;
+  mobileNav.classList.toggle('open', navOpen);
+  hamBtn.children[0].style.transform = navOpen ? 'rotate(45deg) translateY(6px)' : '';
+  hamBtn.children[1].style.opacity   = navOpen ? '0' : '1';
+  hamBtn.children[2].style.transform = navOpen ? 'rotate(-45deg) translateY(-6px)' : '';
+});
+
+// Filtering Category logic
+const filterTabs = document.querySelectorAll('.faq-filter-row .filter-tab');
+const cards = document.querySelectorAll('.hub-grid .article-card');
+
+filterTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    filterTabs.forEach(t => t.classList.remove('on'));
+    tab.classList.add('on');
+    
+    const filter = tab.dataset.categoryFilter;
+    cards.forEach(card => {
+      if (filter === 'all' || card.dataset.cat === filter) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Articles Database
+const ARTICLES = {
+  'art-1': {
+    meta: 'AI Automation • June 2026',
+    title: 'What is AI Automation and how does it benefit small businesses?',
+    body: `
+      <p>AI Automation refers to the integration of generative cognitive models (like LLMs) with traditional rule-based software processes to execute complex workflows. While traditional automation simply transfers data from Point A to Point B, AI Automation can analyze, summarize, evaluate, and write text payloads during the transfer.</p>
+      <h2>Key Business Benefits</h2>
+      <p>For small and medium enterprises, AI automation addresses operational bottlenecks directly:
+      <ul>
+        <li><strong>Reduced Overhead:</strong> Bypassing expensive data enrichment service costs by executing prompts directly to structured evaluation APIs.</li>
+        <li><strong>24/7 Responsiveness:</strong> AI Chatbots handle user queries instantly, qualifying potential leads during off-hours.</li>
+        <li><strong>Zero Data Entry:</strong> Documents such as CAPEX/OPEX invoices, lead spreadsheets, and emails are read, structured, and saved directly into MySQL or PostgreSQL databases.</li>
+      </ul>
+      </p>
+      <h2>Quantifiable ROI</h2>
+      <p>Small businesses deploying custom automated workflow structures report average efficiency boosts of 35% in HR lifecycle management, alongside a 20% to 30% saving in support ticketing hours within the first quarter of deployment.</p>
+    `
+  },
+  'art-2': {
+    meta: 'AI Automation • June 2026',
+    title: 'AI Agents vs Chatbots: Choosing the right architecture',
+    body: `
+      <p>Choosing the correct architectural design is essential when deploying AI solutions. Businesses often confuse conversational chatbots with autonomous AI Agents. Understanding this divide is critical for budget mapping and pipeline efficiency.</p>
+      <h2>Conversational AI Chatbots</h2>
+      <p>Chatbots are fundamentally reactive systems. They wait for a prompt, perform a quick semantic or vector database lookup (RAG), and compile a conversational response. They do not formulate intermediate plans or call external tools dynamically unless explicitly programmed via static commands.</p>
+      <h2>Autonomous AI Agents</h2>
+      <p>AI Agents are proactive systems designed around reasoning loops. When presented with a broad objective (e.g., "Find and qualify 20 prospects in Auckland"), an agent executes a Plan-Act-Observe cycle:
+      <ul>
+        <li><strong>Plan:</strong> Breaks down the prompt into sub-tasks (searching directories, reading contacts, writing sheets).</li>
+        <li><strong>Act:</strong> Triggers external API nodes (web scrapers, CRM updates).</li>
+        <li><strong>Observe:</strong> Evaluates if the tool response was successful and revises its strategy dynamically.</li>
+      </ul>
+      </p>
+      <h2>Which should you build?</h2>
+      <p>Build a chatbot if you need immediate, hallucination-free support for standard FAQ queues. Build an AI Agent if you need to automate multi-step developer, marketing, or scheduling pipelines that require logical checks.</p>
+    `
+  },
+  'art-3': {
+    meta: 'AI Automation • June 2026',
+    title: 'Best AI Tools for Small Business Operational ROI',
+    body: `
+      <p>Many business owners get lost in the AI hype, subscribing to multiple generic tools without establishing unified pipelines. To achieve real ROI, automation systems must connect together seamlessly. Here are the core layers recommended for modern small businesses.</p>
+      <h2>1. Visual Automation Engine: n8n</h2>
+      <p>n8n is the ultimate tool for workflow automation. It can be self-hosted on a private Docker server to run infinite background triggers without execution billing. It replaces expensive Zapier integrations and supports native JavaScript logic inside nodes.</p>
+      <h2>2. Grounded Database: RAG (Retrieval-Augmented Generation)</h2>
+      <p>Rather than paying for expensive custom model training, businesses should load internal PDFs and SOP manuals into a vector store (like Pinecone or pgvector). This allows custom GPT chatbots to answer proprietary client queries with 100% accuracy and zero security leaks.</p>
+      <h2>3. Autonomous Agent Framework: LangGraph</h2>
+      <p>For advanced needs like email auto-answering or outbound prospecting, LangGraph maps state conditions. This ensures AI agents can safely debate, rewrite drafts, and request human validation before calling critical database operations.</p>
+    `
+  },
+  'art-4': {
+    meta: 'Laravel • May 2026',
+    title: 'Laravel vs Node.js: Selecting the backend for AI SaaS',
+    body: `
+      <p>SaaS founders frequently ask whether to build their backend using Node.js/Express or Laravel (PHP). When building AI-centric applications, backend selection directly affects query load scaling and code maintenance speed.</p>
+      <h2>Why Laravel Wins for AI SaaS</h2>
+      <p>While Node.js is excellent for raw API routing, Laravel provides a comprehensive out-of-the-box ecosystem:
+      <ul>
+        <li><strong>Robust Queue Management:</strong> AI requests to APIs (like Gemini or OpenAI) take time. Laravel's built-in queue workers manage parallel background jobs cleanly, preventing server timeouts.</li>
+        <li><strong>Multi-Tenancy Security:</strong> Isolating client database records is essential. Laravel's middleware scopes queries automatically, preventing data leaks.</li>
+        <li><strong>Elegant Database ORM (Eloquent):</strong> Managing vector indices, prompt logs, and customer CRM records is simple and clean with Laravel migration tables.</li>
+      </ul>
+      </p>
+      <h2>When to use Node.js</h2>
+      <p>Node.js is suitable if you are building highly asynchronous, real-time audio socket streams (like live voice widgets) requiring extremely low latency connection handlers. For complete enterprise dashboards with billing, auth, and database metrics, Laravel remains the superior choice.</p>
+    `
+  },
+  'art-5': {
+    meta: 'n8n • May 2026',
+    title: 'n8n Tutorial: How to configure a self-hosted instance',
+    body: `
+      <p>This tutorial outlines how to deploy a self-hosted instance of n8n using Docker Compose. Self-hosting n8n is highly recommended for businesses: it removes the recurring billing of Zapier and Make while keeping all workflow data private.</p>
+      <h2>Step 1: VPS Configuration</h2>
+      <p>Provision a lightweight server instance (1 CPU, 2GB RAM is sufficient) on GCP, DigitalOcean, or Railway running Ubuntu. Mapped your domain (e.g., <code>n8n.yourcompany.com</code>) to the VPS IP address.</p>
+      <h2>Step 2: Create Docker Compose Configuration</h2>
+      <p>Create a directory on the server and add a <code>docker-compose.yml</code> file:
+      <pre style="background:var(--surface-2);padding:1rem;border-radius:4px;overflow-x:auto;">
+version: '3.8'
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=n8n.yourcompany.com
+      - WEBHOOK_URL=https://n8n.yourcompany.com/
+      - GENERIC_TIMEZONE=Asia/Kolkata
+    volumes:
+      - n8n_data:/home/node/.local/share/n8n
+
+volumes:
+  n8n_data:
+      </pre>
+      </p>
+      <h2>Step 3: SSL Setup & Launch</h2>
+      <p>Configure Nginx as a reverse proxy, set up free SSL certificates using Let's Encrypt, and run <code>docker-compose up -d</code>. Your secure n8n instance is now fully operational at your subdomain, ready for infinite automation runs.</p>
+    `
+  },
+  'art-6': {
+    meta: 'n8n • May 2026',
+    title: 'Constructing Autonomous AI Agent Workflows in n8n',
+    body: `
+      <p>n8n's Advanced AI suite allows developers to build LLM-driven agents visually. This tutorial explains how to set up an autonomous research agent using native nodes.</p>
+      <h2>Core Agent Components in n8n</h2>
+      <p>An n8n AI agent requires three primary linked nodes:
+      <ul>
+        <li><strong>AI Agent Node:</strong> The central processor. Set the execution mode to "Tools Agent" or "ReAct" and define system prompt instructions clearly.</li>
+        <li><strong>Model Node:</strong> The brain. Link a Google Gemini, OpenAI, or Ollama node, configuring temperatures (keep it low, around 0.2, for strict logic).</li>
+        <li><strong>Tools Nodes:</strong> The hands. Attach tools like Wikipedia, Google Search, Web Scraper, or Custom Webhooks to allow the agent to fetch external data.</li>
+      </ul>
+      </p>
+      <h2>Adding Memory</h2>
+      <p>Attach a "Window Buffer Memory" or "Redis Memory" node to the AI Agent. This preserves conversational state across executions, allowing the agent to remember user specifications during loops.</p>
+    `
+  },
+  'art-7': {
+    meta: 'GEO & AEO • April 2026',
+    title: 'What is GEO and why is it replacing traditional SEO?',
+    body: `
+      <p>Generative Engine Optimization (GEO) is the practice of optimizing digital assets for visibility in AI search summaries. As users migrate from traditional search engines to platforms like SearchGPT, Gemini, and Perplexity, traditional keyword density tactics are becoming obsolete.</p>
+      <h2>How GEO Differs from SEO</h2>
+      <p>Traditional SEO focuses on title tags, backlinks, and search position. GEO focuses on content authority, metrics density, and verifiable trust signals:
+      <ul>
+        <li><strong>Metric Density:</strong> AI models value pages with concrete, parsed data (e.g., "reduced latency by 45%").</li>
+        <li><strong>Citation Mapping:</strong> LLMs cite domains that present direct, authoritative answers.</li>
+        <li><strong>EEAT Signals:</strong> Verified certifications, professional associations, and linked credentials confirm source credibility to AI bots.</li>
+      </ul>
+      </p>
+      <h2>The GEO Playbook</h2>
+      <p>To rank in AI summaries, structure your pages with direct Q&A headers, keep technical language clear and jargon-free, publish detailed specifications (like <code>llms.txt</code>), and link to verified credentials.</p>
+    `
+  },
+  'art-8': {
+    meta: 'GEO & AEO • April 2026',
+    title: 'AEO Optimization Guide: Formatting for Answer Engines',
+    body: `
+      <p>Answer Engine Optimization (AEO) aims to supply direct, structured answers to voice assistants (Siri, Alexa, Google Assistant) and chat search interfaces. If your website does not answer target queries explicitly, AI systems will bypass your domain entirely.</p>
+      <h2>1. The "Answer-First" Writing Methodology</h2>
+      <p>When drafting FAQs or articles, lead with the direct answer in the very first sentence (e.g., "n8n is a visual workflow automation platform..."). AI engines scrape this sentence for immediate answer snippet delivery. Save contextual explanations and lists for subsequent paragraphs.</p>
+      <h2>2. Aligning Schemas with DOM Content</h2>
+      <p>Ensure your JSON-LD structured data (like <code>FAQPage</code> and <code>Service</code> schemas) matches your visible HTML content exactly. Discrepancies between hidden metadata and visible page text will trigger search spam penalties, lowering your domain authority.</p>
+    `
+  },
+  'art-9': {
+    meta: 'GEO & AEO • April 2026',
+    title: 'How Generative Search Engines find and cite information',
+    body: `
+      <p>Generative engines like Perplexity, Gemini in Search, and SearchGPT operate differently from traditional web indexers. Instead of displaying a list of page links, they read top search matches, summarize the data, and add tiny inline citation numbers.</p>
+      <h2>The Ingestion Process</h2>
+      <p>When a user queries an AI search engine, the system performs a rapid multi-step pipeline:
+      <ul>
+        <li><strong>Vector Search:</strong> Resolves the query intent and performs a quick semantic search across its indexes.</li>
+        <li><strong>Content Scraping:</strong> Fetches the top-ranking web page DOM contents.</li>
+        <li><strong>LLM Synthesis:</strong> Compiles, cross-references, and synthesizes the scraped text into a coherent reply, mapping citation numbers directly to source URLs.</li>
+      </ul>
+      </p>
+      <h2>Winning the Citation</h2>
+      <p>To secure citations, domains must host clean, text-dense pages, format technical claims with concrete metrics, maintain clean sitemaps, and use machine-readable entry points (like <code>llms.txt</code>).</p>
+    `
+  }
+};
+
+// Modal Operations
+const modal = document.getElementById('article-modal');
+const mMeta = document.getElementById('m-meta');
+const mTitle = document.getElementById('m-title');
+const mBody = document.getElementById('m-body');
+
+function openArticle(id) {
+  const article = ARTICLES[id];
+  if (!article) return;
+  
+  mMeta.textContent = article.meta;
+  mTitle.textContent = article.title;
+  mBody.innerHTML = article.body;
+  
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // Lock scroll
+}
+
+function closeModalDirect() {
+  modal.style.display = 'none';
+  document.body.style.overflow = ''; // Unlock scroll
+}
+
+function closeModal(e) {
+  if (e.target === modal) {
+    closeModalDirect();
+  }
+}
+
+// Scroll Reveal Observer
+const reveals = document.querySelectorAll('[data-reveal]');
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => revealObs.observe(el));
+
+// Magnetic Elements
+document.querySelectorAll('.magnetic').forEach(el => {
+  el.addEventListener('mousemove', e => {
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    el.style.transform = `translate(${x * 0.22}px, ${y * 0.22}px)`;
+  });
+  el.style.transition = 'transform 0.1s ease-out';
+  el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+});
+</script>
+</body>
+</html>
