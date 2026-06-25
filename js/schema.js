@@ -64,8 +64,8 @@
       'Laravel MVC', 'Next.js', 'RAG Architecture', 'LangChain', 'LangGraph',
       'Google Gemini', 'Gemma', 'n8n Workflow Automation', 'Software Architecture',
       'Multi-tenant SaaS', 'Database Optimization', 'E-E-A-T Optimization',
-      'Web Development', 'SEO Development', 'E-commerce Development', 'E-commerce Building',
-      'Web Developer', 'SEO Developer'
+      'Web Development', 'Technical SEO & Search Optimization', 'E-commerce Development', 'E-commerce Building',
+      'Web Developer', 'Technical SEO Consultant', 'SEO Expert', 'AI Search Visibility Consultant'
     ],
     'address': {
       '@type': 'PostalAddress',
@@ -228,8 +228,8 @@
             a: 'Nil Patel holds 6 fully verified technical certifications: AI Agents Fundamentals (Hugging Face, Apr 2026), Cloud Technical Series: AI in Action (Google Cloud APAC, Apr 2026), AI Tools Workshop (Be10x, Feb 2026), Gemini at Work Edition (ULSA, Nov 2025), ADK Builder\'s Badge (ULSA, Nov 2025), and Prompt Design in Vertex AI (Google, Oct 2025). All credentials include official IDs and public verification links.'
           },
           {
-            q: 'Do you provide custom web development, SEO development, or e-commerce builder services in Vadodara, Gujarat, and across India?',
-            a: 'Yes, I provide professional web developer, technical SEO developer, and e-commerce builder services for clients in Vadodara, surrounding cities (such as Anand, Nadiad, Halol, Bharuch, Ahmedabad, Surat, and Rajkot), across Gujarat, and throughout India. I specialize in building custom, high-speed, and secure platforms tailored to the needs of growth-focused SMEs and startups.'
+            q: 'Do you provide custom web development, Technical SEO, or e-commerce builder services in Vadodara, Gujarat, and across India?',
+            a: 'Yes, I provide professional web developer, technical SEO consultant, and e-commerce builder services for clients in Vadodara, surrounding cities (such as Anand, Nadiad, Halol, Bharuch, Ahmedabad, Surat, and Rajkot), across Gujarat, and throughout India. I specialize in building custom, high-speed, and secure platforms tailored to the needs of growth-focused SMEs and startups.'
           }
         ])
       },
