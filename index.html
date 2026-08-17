@@ -189,6 +189,13 @@
               </div>
             </div>
 
+            <!-- Console Tab Switcher -->
+            <div class="console-tabs">
+              <button class="console-tab-btn active" data-tab="agents">Agent OS</button>
+              <button class="console-tab-btn" data-tab="rag">RAG Search</button>
+              <button class="console-tab-btn" data-tab="saas">Laravel SaaS</button>
+            </div>
+
             <!-- Console Body -->
             <div class="console-body">
               <!-- Interactive Code/Log Lines -->
@@ -228,6 +235,17 @@
                   </span>
                   <span class="viz-label mono">SaaS</span>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Headshot Pill -->
+          <div style="text-align: center;">
+            <div class="hero-dev-badge">
+              <img src="images/nil_patel_suit.jpg" alt="Nil Patel" class="hero-dev-avatar" />
+              <div class="hero-dev-info">
+                <span class="hero-dev-name">Nil Patel</span>
+                <span class="hero-dev-sub">HF Agent Developer · Available Q3/Q4</span>
               </div>
             </div>
           </div>
@@ -2334,6 +2352,51 @@
           }
         } else {
           window.open(baseUrl, '_blank', 'noopener,noreferrer');
+        }
+      });
+    });
+
+    /* ── STICKY NAVBAR SCROLL LISTENER ── */
+    const navEl = document.getElementById('nav');
+    if (navEl) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 60) {
+          navEl.classList.add('scrolled');
+        } else {
+          navEl.classList.remove('scrolled');
+        }
+      }, { passive: true });
+    }
+
+    /* ── HERO CONSOLE TAB SWITCHER ── */
+    const consoleTabs = document.querySelectorAll('.console-tab-btn');
+    const consoleCode = document.querySelector('.console-code');
+    const consoleSnippets = {
+      agents: `<div class="code-line"><span class="code-prompt">$</span> npm run dev --ai-agent</div>
+<div class="code-line success">✓ Local Gemma API responding [200 OK]</div>
+<div class="code-line info">> Ingesting vector embeddings for RAG...</div>
+<div class="code-line success">✓ 1,240 documents successfully indexed</div>
+<div class="code-line info">> Triggering n8n autonomous webhook...</div>
+<div class="code-line success">✓ System fully operational. Ready to build.</div>`,
+      rag: `<div class="code-line"><span class="code-prompt">$</span> python rag_ingest.py --pinecone</div>
+<div class="code-line info">> Connecting to Pinecone vector database...</div>
+<div class="code-line success">✓ Index 'nil-knowledge-base' initialized</div>
+<div class="code-line info">> Chunking 85 PDF documents with recursive splitter...</div>
+<div class="code-line success">✓ 4,120 vector embeddings stored [Cosine Similarity]</div>`,
+      saas: `<div class="code-line"><span class="code-prompt">$</span> php artisan migrate --seed --tenancy</div>
+<div class="code-line info">> Creating multi-tenant DB schema...</div>
+<div class="code-line success">✓ 18 tenant databases provisioned</div>
+<div class="code-line info">> Checking Cashfree Webhook listener...</div>
+<div class="code-line success">✓ 100% RBAC permission matrix verified</div>`
+    };
+
+    consoleTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        consoleTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const tabKey = tab.dataset.tab;
+        if (consoleCode && consoleSnippets[tabKey]) {
+          consoleCode.innerHTML = consoleSnippets[tabKey];
         }
       });
     });
