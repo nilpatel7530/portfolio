@@ -30,8 +30,8 @@
   --accent-2-muted: #C4D6F5;
 
   --ink:            #0F0F0D;       /* Near-black — warmer than pure #000        */
-  --ink-2:          #4A4844;       /* Secondary text                            */
-  --ink-3:          #9B9893;       /* Tertiary / hints                          */
+  --ink-2:          #242320;       /* High-contrast dark grey (was #4A4844)     */
+  --ink-3:          #4E4C48;       /* High-contrast medium grey (was #9B9893)   */
 
   --page-bg:        #F7F4EF;       /* Warm off-white — not cold, not clinical   */
   --surface-1:      #FFFFFF;       /* Cards, modals                             */
@@ -335,8 +335,8 @@ body.cursor-link #cursor-ring { opacity: 0; }
 }
 .hero-heading .italic-word { font-style: italic; color: var(--accent); }
 .hero-heading .outline-word {
-  -webkit-text-stroke: 1.5px var(--ink);
-  color: transparent;
+  color: var(--ink);
+  font-weight: 400;
 }
 
 .hero-desc {
@@ -501,9 +501,10 @@ body.cursor-link #cursor-ring { opacity: 0; }
 }
 
 .console-code {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   line-height: 1.65;
-  color: var(--ink-2);
+  color: #0F0F0D;
+  font-weight: 500;
 }
 
 .code-line {
@@ -514,11 +515,11 @@ body.cursor-link #cursor-ring { opacity: 0; }
 
 .code-line .code-prompt {
   color: var(--accent);
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.code-line.success { color: #16a34a; }
-.code-line.info { color: var(--accent-2); }
+.code-line.success { color: #15803d; font-weight: 600; }
+.code-line.info { color: #1d4ed8; font-weight: 600; }
 
 /* Node Visualizations */
 .console-viz {
@@ -1453,28 +1454,30 @@ textarea.form-control { min-height: 140px; }
 .console-tabs {
   display: flex;
   gap: 0.35rem;
-  background: rgba(0, 0, 0, 0.25);
-  padding: 0.35rem 0.6rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #141416;
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 .console-tab-btn {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: rgba(255, 255, 255, 0.5);
-  background: transparent;
-  border: 1px solid transparent;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #B5B3AD;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
-  padding: 0.25rem 0.65rem;
+  padding: 0.3rem 0.75rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .console-tab-btn:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.15);
 }
 .console-tab-btn.active {
-  color: #ffffff;
-  background: rgba(232, 87, 42, 0.25);
-  border-color: rgba(232, 87, 42, 0.5);
+  color: #FFFFFF;
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 /* Hero Developer Headshot Pill */
