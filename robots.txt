@@ -14,6 +14,8 @@ User-agent: GPTBot
 Allow: /
 Allow: /projects/
 Allow: /headshot.jpg
+Allow: /images/nil_patel_suit.jpg
+Allow: /images/nil_patel_vr.jpg
 
 User-agent: ChatGPT-User
 Allow: /
@@ -22,6 +24,8 @@ User-agent: Google-Extended
 Allow: /
 Allow: /projects/
 Allow: /headshot.jpg
+Allow: /images/nil_patel_suit.jpg
+Allow: /images/nil_patel_vr.jpg
 
 User-agent: ClaudeBot
 Allow: /

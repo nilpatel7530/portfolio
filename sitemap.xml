@@ -7,29 +7,29 @@
     <!-- Main Portfolio Page -->
     <url>
         <loc>https://nilpatel.snpsolutions.co.nz/</loc>
-        <lastmod>2026-06-25</lastmod>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <!-- Project Assets (Indexed for image search) -->
         <image:image>
+            <image:loc>https://nilpatel.snpsolutions.co.nz/images/nil_patel_suit.jpg</image:loc>
+            <image:title>Nil Patel — Independent AI &amp; Full-Stack Engineer Studio Portrait</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nilpatel.snpsolutions.co.nz/images/nil_patel_vr.jpg</image:loc>
+            <image:title>Nil Patel — Futuristic Neural AR Smart Glasses Interaction</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nilpatel.snpsolutions.co.nz/images/yukti_ai.png</image:loc>
+            <image:title>Yukti_AI Multi-Agent Operating System Preview</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nilpatel.snpsolutions.co.nz/images/leadgenpro.png</image:loc>
+            <image:title>LeadGen Pro B2B Lead Discovery Platform Mockup</image:title>
+        </image:image>
+        <image:image>
             <image:loc>https://nilpatel.snpsolutions.co.nz/images/goswamisangath.webp</image:loc>
             <image:title>Goswami Sangath Community Platform Mockup</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://nilpatel.snpsolutions.co.nz/images/trustlineenergy.webp</image:loc>
-            <image:title>TrustLine Energy Platform Mockup</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://nilpatel.snpsolutions.co.nz/images/suyoglife.webp</image:loc>
-            <image:title>Suyog Matrimonial Platform Mockup</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://nilpatel.snpsolutions.co.nz/images/celsrs.webp</image:loc>
-            <image:title>Creative Engineering Limited SRS Mockup</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://nilpatel.snpsolutions.co.nz/images/enterprisehrms.webp</image:loc>
-            <image:title>Human Resource Management System Mockup</image:title>
         </image:image>
         <image:image>
             <image:loc>https://nilpatel.snpsolutions.co.nz/images/nilleads.png</image:loc>
@@ -38,14 +38,6 @@
         <image:image>
             <image:loc>https://nilpatel.snpsolutions.co.nz/images/watermarkremover.png</image:loc>
             <image:title>Video Watermark Remover Tool Mockup</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://nilpatel.snpsolutions.co.nz/images/ytautomation.png</image:loc>
-            <image:title>YouTube Automation Agent Panel Mockup</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://nilpatel.snpsolutions.co.nz/headshot.jpg</image:loc>
-            <image:title>Nil Patel — AI Developer &amp; Full-Stack Engineer</image:title>
         </image:image>
     </url>
     <!-- Dedicated Service Pages -->
