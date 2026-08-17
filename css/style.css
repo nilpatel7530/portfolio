@@ -1533,3 +1533,52 @@ textarea.form-control { min-height: 140px; }
   transform: translateY(-6px) !important;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(232, 87, 42, 0.25) !important;
 }
+
+
+/* ──────────────────────────────────────────────────────────────
+   SECTION TYPOGRAPHY & HEADERS SYSTEM
+   ────────────────────────────────────────────────────────────── */
+.section-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section-kicker::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.section-title {
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 300 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.025em !important;
+  color: var(--ink) !important;
+  margin-bottom: 1rem;
+}
+
+.section-title em {
+  font-family: var(--font-display) !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+  color: var(--accent) !important;
+}
+
+.section-sub {
+  font-family: var(--font-sans) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.75 !important;
+  color: var(--ink-2) !important;
+  max-width: 620px;
+}
