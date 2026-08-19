@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "> Official portfolio website of **Nil Patel** — AI-Augmented Software Engineer & AI Search Visibility Consultant, Hugging Face Certified Agent Developer, based in Vadodara, Gujarat, India.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilpatel7530/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nilpatel7530/portfolio/issues"
+  },
+  "homepage": "https://github.com/nilpatel7530/portfolio#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
