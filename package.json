@@ -17,8 +17,10 @@
   "bugs": {
     "url": "https://github.com/nilpatel7530/portfolio/issues"
   },
-  "homepage": "https://github.com/nilpatel7530/portfolio#readme",
   "dependencies": {
     "@vercel/speed-insights": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   }
 }
