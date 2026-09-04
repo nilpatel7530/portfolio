@@ -4,7 +4,9 @@
   "description": "> Official portfolio website of **Nil Patel** — AI-Augmented Software Engineer & AI Search Visibility Consultant, Hugging Face Certified Agent Developer, based in Vadodara, Gujarat, India.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo Static portfolio website build complete. Files ready for deployment.",
+    "start": "npx serve .",
+    "preview": "npx serve ."
   },
   "repository": {
     "type": "git",
